@@ -11,13 +11,20 @@
   \chords { 
     r4 |
     g4 h:7  | c2      | d:7     | g   |
+    % 5
     g4 h:m7 | a2:m    | d4  d:7 | g2  |
+    % 9
     g4 h:7  | c2      | d:7     | g   | 
+    % 13
     g:7     | c4  c:m | g  a8:7 d:7 | g2 |
+    % 17
     h:7     | e:m     | d:7     | g   |
-    c4 c:m  | g4. gis8:dim | d2:7   | g  |
+    % 21
+    c4 c:m  | g4. a8:m | d2:7   | g  |
+    % 25
     h:7     | e:m     | d:7     | g   |
-    c4 c:m  | g4. gis8:dim | a4:m d:7 | d8 g d4 |
+    % 29
+    c4 c:m  | g4. gis8:dim | a4:m d:7 | g8 d g4 |
   }
   
 \relative c'' {
