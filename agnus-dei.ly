@@ -34,12 +34,18 @@ SopOneMusic = \relative c'' {
   a1 a | \time 5/2 a1. h1 | r1 c,1.( |
   \time 3/2 c2) d1 | << {d1 d4 } \new Voice { \voiceTwo es1 d4 } >> r4 |
   r2 c d | << { d1 d4 } \new Voice { \voiceTwo es1 d4 } >> r4 |
+  r2 c c | c1 c2 |
+  \time 5/2 c1( h1.)( | h1) h1. |
+  \time 3/2 r2 c' d |
+% 3
+%  << { es1 d4 } \new Voice { \voiceTwo c1 d4 } >> r4 |
 }
 
 SopOneLyrics = \lyricmode {
   A -- gnus, A -- gnus De -- i
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
   mi -- se -- re -- re, mi -- se -- re -- re,
+  mi -- se -- re -- re, no -- bis, %mi -- se -- re -- re,
 }
 
 SopTwoMusic = \relative c'' {
@@ -59,6 +65,7 @@ SopTwoLyrics = \lyricmode {
   A -- gnus, A -- gnus De -- i
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
   mi -- se -- re -- re,  mi -- se -- re -- re,
+%  mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
 }
 
 AltoMusic = \relative c'' {
@@ -91,12 +98,17 @@ TenOneMusic = \relative c' {
 % 2
   c1 e | \time 5/2 d1. d1 | R1*5/2 | 
   \time 3/2 R1. | R | R | R |
+  r2 c, d | << {es1 d2 } \new Voice { \voiceTwo d1 d2 } >> |
+  \time 5/2 c1( h1.)( | h1)  c1. |
+  \time 3/2 r2 c' c | 
+%3 
+  b1 f4 r4 |
 }
 
 TenOneLyrics = \lyricmode {
   A -- gnus, A -- gnus De -- i
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
-  mi -- se -- re -- re,
+  mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
 }
 
 TenTwoMusic = \relative c' {
@@ -110,11 +122,17 @@ TenTwoMusic = \relative c' {
 % 2
   d1 h1 | \time 5/2 c1. c1( | c1)( c1.) | 
   \time 3/2 R1. | R | R | R |
+  r2 c, c | c1 c2 |
+  \time 5/2 c1( h1.)( | h1) c1. |
+  \time 3/2 r2 c' g | 
+% 3
+  f1 es4 r4 | 
 }
 
 TenTwoLyrics = \lyricmode {
   A -- gnus, A -- gnus De -- i
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
+  mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
 }
 
 BassMusic = \relative c' {
@@ -128,11 +146,17 @@ BassMusic = \relative c' {
 % 2
   a1 h1 | \time 5/2 h1. c1( | c1)( c1.) | 
   \time 3/2 R1. | R | R | R |
+  r2 c, b | << {b1 b2 } \new Voice { \voiceTwo a1 b2 } >>  |
+  \time 5/2 c1( c1.)( | b1) b1. |
+  \time 3/2 r2 c b
+% 3
+  as1 b4 r4 |
 }
 
 BassLyrics = \lyricmode {
   A -- gnus, A -- gnus De -- i
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
+  mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
 }
 
 
