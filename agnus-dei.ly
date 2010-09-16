@@ -25,7 +25,6 @@ global = {
 
 SopOneMusic = \relative c'' {
   \set Staff.instrumentName = #"Soprano I"
-  \override NoteColumn #'ignore-collision = ##t
 % 1
   a\breve\p( a1.) | \time 4/2 a\breve( | a1.) r2 |
   \time 5/2 r1. a1 | \time 3/2 a1. | c1.\< |
@@ -39,14 +38,14 @@ SopOneMusic = \relative c'' {
   \time 5/2 c1( h1.)( | h1) h1. |
   \time 3/2 r2 c' d |
 % 3
-  << { es1 d4 } { d1 d4 } >> r4 |
+  << { es1 d4 } \new Voice { \voiceOne d1 d4 } >> r4 |
 }
 
 SopOneLyrics = \lyricmode {
   A -- gnus, A -- gnus De -- i
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
   mi -- se -- re -- re, mi -- se -- re -- re,
-  mi -- se -- re -- re, no -- bis, %mi -- se -- re -- re,
+  mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
 }
 
 SopTwoMusic = \relative c'' {
@@ -87,7 +86,7 @@ AltoMusic = \relative c'' {
 % 2
   e1 gis | \time 5/2 e1. g1 | r1 c,1.( |
   \time 3/2 c2) b1 | << { b1 b4  } \new Voice { \voiceTwo as1 b4 } >> r4 |
-  r2 c h! | << {a!1 h4  } \new Voice { \voiceTwo h1 h4 } >> r4 |
+  r2 c h! | << {a!1 h4 } \new Voice { \voiceTwo h1 h4 } >> r4 |
   r2 c g | g1 g2 | 
   \time 5/2 c1( c1.)( | c1) c1. |
   \time 3/2 r2 c g' | 
@@ -108,7 +107,6 @@ AltoLyrics = \lyricmode {
 
 TenOneMusic = \relative c' {
   \set Staff.instrumentName = #"Tenore I"
-%  \override NoteColumn #'ignore-collision = ##t
   \clef "treble_8"
 % 1
   r\breve\p a1. | \time 4/2 h\breve\<( | c1.\>) r2\! | 
@@ -175,7 +173,7 @@ BassMusic = \relative c' {
 % 2
   a1 h1 | \time 5/2 h1. c1( | c1)( c1.) | 
   \time 3/2 R1. | R | R | R |
-  r2 c, b | << {b1 b2 } \new Voice { \voiceTwo a1 b2 } >>  |
+  r2 c, b | << { b1 b2 } \new Voice { \voiceTwo a1 b2 } >>  |
   \time 5/2 c1( c1.)( | b1) b1. |
   \time 3/2 r2 c b
 % 3
