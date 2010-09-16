@@ -4,6 +4,7 @@
 #(set-global-staff-size 18)
 
 global = { 
+  \numericTimeSignature
   \time 7/2 
   \autoBeamOff
   \key a \minor
@@ -39,6 +40,18 @@ SopOneMusic = \relative c'' {
   \time 3/2 r2 c' d |
 % 3
   << { es1 d4 } \new Voice { \voiceOne d1 d4 } >> r4 |
+  r2 c d | << { es1 d2 } \new Voice { \voiceOne d1 d2 } >> |
+  \time 4/2  << { c\breve } \new Voice { \voiceOne c2( h1.) } >> |
+  \time 3/2 h1. | 
+  \time 5/2 R\breve*5/4 |
+  \time 3/2 R1. |
+  h1. | << { \stemDown ais2( h1) } \new Voice { \voiceTwo \stemUp h2( fis1) } >> |
+  \time 6/2 r1 r1 r2 h | ais( h) cis d( cis) r2 |
+  h ais( h) cis d( cis4) r4 |
+  h2 ais4( h) cis2 d4( cis) r4 
+  h4 ais( h) |
+  \time 2/2 cis d( cis2)  
+% 4
 }
 
 SopOneLyrics = \lyricmode {
@@ -46,6 +59,12 @@ SopOneLyrics = \lyricmode {
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
   mi -- se -- re -- re, mi -- se -- re -- re,
   mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
+  mi -- se -- re -- re, no -- bis.
+  A -- gnus
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i
 }
 
 SopTwoMusic = \relative c'' {
@@ -66,6 +85,12 @@ SopTwoMusic = \relative c'' {
   \time 4/2 g\breve | 
   \time 3/2 h1. |
   \time 5/2 R\breve*5/4 | \time 3/2 R1. |
+  h1. | fis2( e1) | r1 r1 h2 ais( | h) cis d( cis) r h |
+  ais( h) cis d( cis4) r4 
+  h2 ais4( h) cis2 d4( cis) r4 
+  h4 ais( h) cis d( |
+  \time 2/2 cis2)  
+% 4
 }
 
 SopTwoLyrics = \lyricmode {
@@ -74,6 +99,11 @@ SopTwoLyrics = \lyricmode {
   mi -- se -- re -- re,  mi -- se -- re -- re,
   no -- bis, mi -- se -- re -- re,
   mi -- se -- re -- re no -- bis.
+  A -- gnus
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i
 }
 
 AltoMusic = \relative c'' {
@@ -95,6 +125,13 @@ AltoMusic = \relative c'' {
   \time 4/2 es2( d1.) |
   \time 3/2 h1. |
   \time 5/2 R\breve*5/4 | \time 3/2 R1. |
+  h1. | << { cis2( d1) } \new Voice { \voiceTwo h1.} >> | 
+  r1 r2 h ais( h) | cis d( cis) r h ais( |
+  h) cis d( cis4) r4 
+  h2 ais4( h) cis2 d4( cis) r4 
+  h4 ais( h) cis d( cis2)( |  
+  \time 2/2 cis1) |
+% 4
 }
 
 AltoLyrics = \lyricmode {
@@ -103,6 +140,11 @@ AltoLyrics = \lyricmode {
   mi -- se -- re -- re, mi -- se -- re -- re,
   mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
   mi -- se -- re -- re, no -- bis.
+  A -- gnus
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i
 }
 
 TenOneMusic = \relative c' {
@@ -124,9 +166,14 @@ TenOneMusic = \relative c' {
   \time 4/2 c'\breve |
   \time 3/2 h4 r r2 h( |
   \time 5/2 h1)( h1.) |
-  \time 3/2 << {ais1.( | h1) r2 } { h1.( | fis1) r2 } >> |
+  \time 3/2 << { \stemDown ais1.( | h1) } \new Voice { \voiceTwo \stemUp h1.( | fis1) } >> r2 |
   R1. |
   \time 6/2 r1 h2 ais( h) cis | d( cis) r
+  h ais( h) cis d( cis4) r4 
+  h2 ais4( h) cis2 d4( cis) r4 
+  h4 ais( h) cis d( cis1)( |
+  \time 2/2 cis1) |
+% 4
 }
 
 TenOneLyrics = \lyricmode {
@@ -136,6 +183,9 @@ TenOneLyrics = \lyricmode {
   mi -- se -- re -- re, no -- bis.
   A -- gnus
   A -- gnus De -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i
 }
 
 TenTwoMusic = \relative c' {
@@ -153,13 +203,28 @@ TenTwoMusic = \relative c' {
   \time 5/2 c1( h1.)( | h1) c1. |
   \time 3/2 r2 c' g | 
 % 3
-  f1 es4 r4 | 
+  f1 es4 r4 | r2 es g | f1 es2 | 
+  \time 4/2 f2( g1.) | \time 3/2 h1.
+  \time 5/2 r1 h1. |
+  \time 3/2 fis1.( | e1) r2 | R1. 
+  \time 6/2 r2 h ais( h) cis d( cis) r
+  h ais( h) cis d( cis4) r4 
+  h2 ais4( h) cis2 d4( cis) r4 
+  h4 ais( h) cis d( cis1.)( |
+  \time 2/2 cis1) |
+% 4
 }
 
 TenTwoLyrics = \lyricmode {
   A -- gnus, A -- gnus De -- i
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
   mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
+  mi -- se -- re -- re, no -- bis.
+  A -- gnus
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i
 }
 
 BassMusic = \relative c' {
@@ -177,13 +242,34 @@ BassMusic = \relative c' {
   \time 5/2 c1( c1.)( | h1) c1. |
   \time 3/2 r2 c b
 % 3
-  as1 b4 r4 |
+  as1 b4 r4 | r2 c h | a1 b2 | 
+  \time 4/2 c\breve | \time 3/2 h1. |
+  \time 5/2 r1 h1. |
+  \time 3/2 << { \stemDown h1.( h1) } \new Voice { \voiceOne \stemUp cis1.( | d1) } >>
+  r2 | R1. |
+  \time 6/2 h2 ais( h) cis d( cis) r
+  h ais( h) cis d( cis4) r4 
+  h2 ais4( h) cis2 d4( cis) r4 
+  h4 ais( h) cis d( cis\breve)( |
+  \time 2/2 cis1)( |
+% 4 / 38
+  \time 3/2 cis1.)( |
+  \time 4/2 cis\breve)( |
+  \time 3/2 cis1.)( |
+  \time 4/2 cis\breve) |
+% 5
 }
 
 BassLyrics = \lyricmode {
   A -- gnus, A -- gnus De -- i
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
   mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
+  mi -- se -- re -- re, no -- bis.
+  A -- gnus
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i,
+  A -- gnus de -- i
 }
 
 
