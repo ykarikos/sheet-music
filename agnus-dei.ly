@@ -25,6 +25,7 @@ global = {
 
 SopOneMusic = \relative c'' {
   \set Staff.instrumentName = #"Soprano I"
+  \override NoteColumn #'ignore-collision = ##t
 % 1
   a\breve\p( a1.) | \time 4/2 a\breve( | a1.) r2 |
   \time 5/2 r1. a1 | \time 3/2 a1. | c1.\< |
@@ -38,7 +39,7 @@ SopOneMusic = \relative c'' {
   \time 5/2 c1( h1.)( | h1) h1. |
   \time 3/2 r2 c' d |
 % 3
-%  << { es1 d4 } \new Voice { \voiceTwo c1 d4 } >> r4 |
+  << { es1 d4 } { d1 d4 } >> r4 |
 }
 
 SopOneLyrics = \lyricmode {
@@ -63,8 +64,9 @@ SopTwoMusic = \relative c'' {
   \time 3/2 r2 c' c |
 % 3
   c1 c2( | c2.) g4 c2 | c1 c2 | 
-  \time 4/2 g\breve | \time 3/2 h1. |
-%  \time 5/2 R\breve | \time 3/2 R1. |
+  \time 4/2 g\breve | 
+  \time 3/2 h1. |
+  \time 5/2 R\breve*5/4 | \time 3/2 R1. |
 }
 
 SopTwoLyrics = \lyricmode {
@@ -86,16 +88,27 @@ AltoMusic = \relative c'' {
   e1 gis | \time 5/2 e1. g1 | r1 c,1.( |
   \time 3/2 c2) b1 | << { b1 b4  } \new Voice { \voiceTwo as1 b4 } >> r4 |
   r2 c h! | << {a!1 h4  } \new Voice { \voiceTwo h1 h4 } >> r4 |
+  r2 c g | g1 g2 | 
+  \time 5/2 c1( c1.)( | c1) c1. |
+  \time 3/2 r2 c g' | 
+% 3
+  g1 g4 r4 | r2 f g | g1 g2 |
+  \time 4/2 es2( d1.) |
+  \time 3/2 h1. |
+  \time 5/2 R\breve*5/4 | \time 3/2 R1. |
 }
 
 AltoLyrics = \lyricmode {
   A -- gnus, A -- gnus De -- i
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
   mi -- se -- re -- re, mi -- se -- re -- re,
+  mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
+  mi -- se -- re -- re, no -- bis.
 }
 
 TenOneMusic = \relative c' {
   \set Staff.instrumentName = #"Tenore I"
+%  \override NoteColumn #'ignore-collision = ##t
   \clef "treble_8"
 % 1
   r\breve\p a1. | \time 4/2 h\breve\<( | c1.\>) r2\! | 
@@ -109,13 +122,22 @@ TenOneMusic = \relative c' {
   \time 5/2 c1( h1.)( | h1)  c1. |
   \time 3/2 r2 c' c | 
 %3 
-  b1 f4 r4 |
+  b1 f4 r4 | r2 d' c | b1 f2 |
+  \time 4/2 c'\breve |
+  \time 3/2 h4 r r2 h( |
+  \time 5/2 h1)( h1.) |
+  \time 3/2 << {ais1.( | h1) r2 } { h1.( | fis1) r2 } >> |
+  R1. |
+  \time 6/2 r1 h2 ais( h) cis | d( cis) r
 }
 
 TenOneLyrics = \lyricmode {
   A -- gnus, A -- gnus De -- i
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
   mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
+  mi -- se -- re -- re, no -- bis.
+  A -- gnus
+  A -- gnus De -- i,
 }
 
 TenTwoMusic = \relative c' {
