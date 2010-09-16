@@ -174,7 +174,7 @@ BassMusic = \relative c' {
   a1 h1 | \time 5/2 h1. c1( | c1)( c1.) | 
   \time 3/2 R1. | R | R | R |
   r2 c, b | << { b1 b2 } \new Voice { \voiceTwo a1 b2 } >>  |
-  \time 5/2 c1( c1.)( | b1) b1. |
+  \time 5/2 c1( c1.)( | h1) c1. |
   \time 3/2 r2 c b
 % 3
   as1 b4 r4 |
