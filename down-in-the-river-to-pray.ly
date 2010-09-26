@@ -43,7 +43,14 @@ SopOneMusic = \relative c' {
 }
 
 SopOneLyrics = \lyricmode {
+  As I went down in the ri -- ver to pray,
+  stu -- dy -- ing a -- bout that good old way
+  and who shall wear the star -- ry crown, 
+  good Lord, show me the way.
 
+  Oh, sis -- ters, let's go down, let's go down
+  come on down. Oh, sis -- ters let's go down,
+  down in the ri -- ver to pray.
 }
 
 SopTwoMusic = \relative c' {
@@ -57,9 +64,6 @@ SopTwoMusic = \relative c' {
   g'4 g8 f | a c g16( f8.) | a8 g f4 | f16 f8. d16( c8.) |
   g'4 g8 f | a c g16( f8.) | a8 g16 f  f f d8 | c2
  
-}
-
-SopTwoLyrics = \lyricmode {
 }
 
 AltoMusic = \relative c' {
@@ -78,6 +82,9 @@ AltoMusic = \relative c' {
 }
 
 AltoLyrics = \lyricmode {
+  Oh, sis -- ters, let's go down, let's go down
+  come on down. Oh, sis -- ters let's go down,
+  down in the ri -- ver to pray.
 }
 
 TenoreMusic = \relative c' {
@@ -88,19 +95,12 @@ TenoreMusic = \relative c' {
 
 }
 
-TenoreLyrics = \lyricmode {
-}
-
 BarytoneMusic = \relative c' {
   \set Staff.instrumentName = #"Barytone"
   \set Staff.shortInstrumentName = "Br"
   \clef bass
   R2 * 17 
 
-
-}
-
-BarytoneLyrics = \lyricmode {
 
 }
 
@@ -116,8 +116,6 @@ BassMusic = \relative c {
   c'4 c8 c | f f f4 | f8 f16 f  b, b c8 | f,2
 }
 
-BassLyrics = \lyricmode {
-}
 
 
 \score {
@@ -127,27 +125,29 @@ BassLyrics = \lyricmode {
 	\global
         \SopOneMusic
       }
-%     \new Lyrics \lyricsto "SopOne" {
-%       \SopOneLyrics
-%     }
+     \new Lyrics \lyricsto "SopOne" {
+       \SopOneLyrics
+       \SopOneLyrics
+     }
     >>
     \new Staff <<
       \new Voice = "SopTwo" {
         \global
         \SopTwoMusic
       }
-%     \new Lyrics \lyricsto "SopTwo" {
-%       \SopTwoLyrics
-%     }
+     \new Lyrics \lyricsto "SopTwo" {
+       \SopOneLyrics
+     }
     >>
     \new Staff <<
       \new Voice = "Alto" {
         \global
         \AltoMusic
       }
-%     \new Lyrics \lyricsto "Alto" {
-%       \AltoLyrics
-%     }
+     \new Lyrics \lyricsto "Alto" {
+       \AltoLyrics
+       \SopOneLyrics
+     }
     >>
     \new Staff <<
       \new Voice = "Tenore" {
@@ -172,9 +172,9 @@ BassLyrics = \lyricmode {
         \global
         \BassMusic
       }
- %    \new Lyrics \lyricsto "Bass" {
- %      \BassLyrics
- %    }
+      \new Lyrics \lyricsto "Bass" {
+	\SopOneLyrics
+      }
     >>
   >>
   \midi { 
