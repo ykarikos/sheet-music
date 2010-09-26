@@ -35,7 +35,8 @@ SopOneMusic = \relative c' {
 
   \bar "||:"
   r8 f f a | a a16 a a a a8 | a4 b16 b b b | b8 a c b | a g f d |
-  f8. a16 a8 g | a c c4 | b16 b8 b16 a4( | a2) \bar "||"
+  f8. a16 a8 g | a c c4 | b16 b8 b16 a4( | a2) \mark "Fine" 
+  \bar "||" 
 
   c4 c8 a | d f c16( a8.) | c8 c d4 | d16 d8( c16) c4 |
   c4 c8 a | d f c16( a8.) | c8 b16 a  b b g8 | f2 
@@ -56,6 +57,8 @@ SopOneLyrics = \lyricmode {
 SopTwoMusic = \relative c' {
   \set Staff.instrumentName = #"Soprano II"
   \set Staff.shortInstrumentName = "S2"
+  \set Staff.midiMaximumVolume = #0.3
+
   R2 * 17 
   \bar "||:"
   r8 c c d | f f16 f f f f8 | f4 g16 g g a | g8 f a g | f d c a |
@@ -91,17 +94,26 @@ TenoreMusic = \relative c' {
   \set Staff.instrumentName = #"Tenore"
   \set Staff.shortInstrumentName = "T"
   \clef "treble_8"
-  R2 * 17 
+  R2 * 17 |
 
+  r8 c c b | a a16 a a a a8 | a4 b16 b b b | b8 a c b | a a a a |
+  a8. a16 a8 g | a c c4 | b16 b8 b16 a4( | a2) |
+  
+  c4 c8 a | d f c16( a8.) | c8 c b4 | b16 b8. a4 |
+  c4 c8 a | d f c16( a8.) | c8 b16 a b b b8 | a2
 }
 
-BarytoneMusic = \relative c' {
+BarytoneMusic = \relative c {
   \set Staff.instrumentName = #"Barytone"
   \set Staff.shortInstrumentName = "Br"
   \clef bass
-  R2 * 17 
+  R2 * 17 |
 
-
+  r8 c c d | f f16 f f f f8 | f4 g16 g g a | g8 f a g | f d c a |
+  c8. d16 f8 d | f a g4 | f16 f8 d16 c4( | c2) |
+  
+  g'4 g8 f | a c g16( f8.) | a8 g f4 | f16 f8. d16( c8.) |
+  g'4 g8 f | a c g16( f8.) | a8 g16 f f f d8 | c2
 }
 
 BassMusic = \relative c {
@@ -154,18 +166,18 @@ BassMusic = \relative c {
         \global
         \TenoreMusic
       }
- %    \new Lyrics \lyricsto "Tenore" {
- %      \TenoreLyrics
- %    }
+      \new Lyrics \lyricsto "Tenore" {
+	\SopOneLyrics
+      }
     >>
     \new Staff <<
       \new Voice = "Barytone" {
         \global
         \BarytoneMusic
       }
- %    \new Lyrics \lyricsto "Barytone" {
- %      \BarytoneLyrics
- %    }
+      \new Lyrics \lyricsto "Barytone" {
+	\SopOneLyrics
+      }
     >>
     \new Staff <<
       \new Voice = "Bass" {
