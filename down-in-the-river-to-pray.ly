@@ -180,6 +180,7 @@ BassMusic = \relative c {
   \midi { 
     \context {
       \Score
+      tempoWholesPerMinute = #(ly:make-moment 70 4)
     }
   }
   \layout { 
@@ -194,10 +195,6 @@ BassMusic = \relative c {
       \ChoirStaff 
       % If only one non-empty staff in a system exists, still print the backet
       \override SystemStartBracket #'collapse-height = #1
-    }
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 80 4)
     }
   }
 }
