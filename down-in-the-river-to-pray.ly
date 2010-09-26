@@ -73,8 +73,8 @@ AltoMusic = \relative c' {
   r8 c c d | c c16 c c c c8 | c4 e16 e e f | e8 f f d | c d c a |
   c8. d16 c8 d | f16( d) c8 c4 | b16 b8 b16 a4( | a2) |
   
-  e'4 e8 d | f a d16( c8.) | f8 d d4 | d16 d8( c16) c4 |
-  e4 e8 d | f a d16( c8.) | f8 d16 c  b b b8 | a2
+  e'4 e8 d | f a d,16( c8.) | f8 d d4 | d16 d8( c16) c4 |
+  e4 e8 d | f a d,16( c8.) | f8 d16 c  b b b8 | a2
 }
 
 AltoLyrics = \lyricmode {
@@ -104,12 +104,16 @@ BarytoneLyrics = \lyricmode {
 
 }
 
-BassMusic = \relative c' {
+BassMusic = \relative c {
   \set Staff.instrumentName = #"Basso"
   \set Staff.shortInstrumentName = "B"
   \clef bass
   R2 * 17 |
-  
+  r8 c c d | f,8 f16 f f f f8 | f4 c'16 c c c | c8 c f f | f d c a |
+  f8. f16 f8 f | f c' c4 | b16 b8 g16 f4( | f2) |
+
+  c'4 c8 c | f f f4 | f8 f b,4 | b16 b8. f4 |
+  c'4 c8 c | f f f4 | f8 f16 f  b, b c8 | f,2
 }
 
 BassLyrics = \lyricmode {
@@ -193,7 +197,7 @@ BassLyrics = \lyricmode {
     }
     \context {
       \Score
-      tempoWholesPerMinute = #(ly:make-moment 70 4)
+      tempoWholesPerMinute = #(ly:make-moment 80 4)
     }
   }
 }
