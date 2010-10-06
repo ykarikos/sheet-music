@@ -43,7 +43,7 @@ SopOneMusic = \relative c' {
   \bar "|."
 }
 
-SopOneLyrics = \lyricmode {
+stanzaOneLyrics = \lyricmode {
   As I went down in the ri -- ver to pray,
   stu -- dy -- ing a -- bout that good old way
   and who shall wear the star -- ry crown, 
@@ -51,6 +51,17 @@ SopOneLyrics = \lyricmode {
 
   Oh, sis -- ters, let's go down, let's go down
   come on down. Oh, sis -- ters let's go down,
+  down in the ri -- ver to pray.
+}
+
+stanzaTwoLyrics = \lyricmode {
+  As I went down in the ri -- ver to pray,
+  stu -- dy -- ing a -- bout that good old way
+  and who shall wear the robe and crown, 
+  good Lord, show me the way.
+
+  Oh, bro -- thers, let's go down, let's go down
+  come on down. Oh, bro -- thers let's go down,
   down in the ri -- ver to pray.
 }
 
@@ -138,8 +149,8 @@ BassMusic = \relative c {
         \SopOneMusic
       }
      \new Lyrics \lyricsto "SopOne" {
-       \SopOneLyrics
-       \SopOneLyrics
+       \stanzaOneLyrics
+       \stanzaTwoLyrics
      }
     >>
     \new Staff <<
@@ -148,7 +159,7 @@ BassMusic = \relative c {
         \SopTwoMusic
       }
      \new Lyrics \lyricsto "SopTwo" {
-       \SopOneLyrics
+       \stanzaTwoLyrics
      }
     >>
     \new Staff <<
@@ -158,7 +169,7 @@ BassMusic = \relative c {
       }
      \new Lyrics \lyricsto "Alto" {
        \AltoLyrics
-       \SopOneLyrics
+       \stanzaTwoLyrics
      }
     >>
     \new Staff <<
@@ -167,7 +178,7 @@ BassMusic = \relative c {
         \TenoreMusic
       }
       \new Lyrics \lyricsto "Tenore" {
-	\SopOneLyrics
+	\stanzaTwoLyrics
       }
     >>
     \new Staff <<
@@ -176,7 +187,7 @@ BassMusic = \relative c {
         \BarytoneMusic
       }
       \new Lyrics \lyricsto "Barytone" {
-	\SopOneLyrics
+	\stanzaTwoLyrics
       }
     >>
     \new Staff <<
@@ -185,7 +196,7 @@ BassMusic = \relative c {
         \BassMusic
       }
       \new Lyrics \lyricsto "Bass" {
-	\SopOneLyrics
+	\stanzaTwoLyrics
       }
     >>
   >>
