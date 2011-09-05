@@ -14,9 +14,13 @@ global = {
 \header {
   title = "Down in the River to Pray"
   subtitle = "Tennessee, USA"
-  composer = "Trad."
-%  poet = ""
-%  tagline = ""
+  composer = "Traditional"
+  mutopiacomposer = "Traditional"
+  instrument = "Voice (SSATBrB)"
+  style = "Gospel"
+  maintainer = "Yrjö Kari-Koskinen"
+  copyright = "Creative Commons Attribution-ShareAlike 3.0"
+  source = ""
 }
 
 \paper {
