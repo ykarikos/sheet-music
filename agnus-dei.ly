@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.12.3"
 \include "suomi.ly"
 
 #(set-global-staff-size 18)
