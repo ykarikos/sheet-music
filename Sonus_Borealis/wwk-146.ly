@@ -1,5 +1,5 @@
 %% Wanhan wirsikirjan wirsi 146
-%%
+%% O puhdas Jumalan Caritza
 
 
 \include "deutsch.ly"
@@ -10,9 +10,8 @@
 
 \header {
     title = "WWK 146"
-%    poet = "Hemminki Maskulainen"
-    arranger = "J. Vesterinen & J.H. Schein"
-    tagline = "O puhdas Jumalan Caritza"
+    arranger = "sov. J. Vesterinen & J.H. Schein"
+    tagline = ""
 }
 
 sopMusic =   \relative c' {
@@ -144,16 +143,11 @@ sanatKolKerto = \lyricmode {
 
     \layout {
 	indent = 0.0
-%	line-width = 20.0\cm
-%	textheight = 29.0\cm
-%	interscoreline = 0\pt
 
-%	\context {
-
-	% a little smaller so lyrics can be closer to the staff. 
-%	    \Staff
-%	    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3) 
-%	}
+        \context {
+        \Lyrics
+          \override LyricText #'font-size = #-1
+	} 
     }
 
     
@@ -165,3 +159,8 @@ sanatKolKerto = \lyricmode {
     }
 
 }
+
+\paper {
+   #(set-paper-size "a4" 'landscape)
+}
+
