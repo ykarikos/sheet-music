@@ -53,7 +53,7 @@ tenorMusic =  \relative c' {
     r2 a4 b | c2 d | g, a4 a | g2( g) | g1 |
     r2 g | a g | a g | f b | c d | d1 |
     r2 a | c a | d4 c c b | a2 b | c c |
-    c\breve
+    <c a f>\breve 
     
 }
 
