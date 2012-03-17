@@ -46,38 +46,27 @@ altoOneMusic =   \relative c' {
 
 tenorMusic =  \relative c' { 
     \key d \minor
-    \partial 1*1
-    \set fontSize = #-3
-    g1 | 
-    \set fontSize = #0
-    g1 g g | a a g | c\breve g1 | a\breve. |
-    d1 d d | es\breve d1 | d, a'\breve | h h1 |
-    c\breve d1 | g,\breve g1 | c, c' g | a\breve. | 
-    f\breve f1 | f\breve c'1 | a a a | fis\breve. |
-    b1 b d | a a a | g\breve b1 | a\breve. |
-    b\breve b1 | c1 c c | b\breve c1 | a\breve d1 |
-    c c d | c\breve b1 | d d\breve | d\longa |
-
-    % lopuke
-%    d1 c4 b8 a g2 | g\longa
+    \stemUp
+    \partial 2*1
+    a2 | c4 c b b | g2 c( | c) h | c1 |
+    r2 g | b g | f f4 f | f2 e | f1 |
+    r2 a4 b | c2 d | g, a4 a | g2( g) | g1 |
+    r2 g | a g | a g | f b | c d | d1 |
+    r2 a | c a | d4 c c b | a2 b | c c |
+    c\breve
+    
 }
 
-bassMusic =  \relative c { 
+bassMusic =  \relative c {
     \key d \minor
-    \partial 1*1
-    \set fontSize = #-3
-    g1 | 
-    \set fontSize = #0
-    g1 g g | d' d g | f\breve g1 | d\breve. |
-    d1 d g | c,\breve g1 | b d\breve | g, g'1 |
-    f\breve d1 | c\breve g1 | a\breve c1 | f,\breve. | 
-    f'\breve d1 | b\breve c1 | d d a | d\breve. | 
-    b1 b b | f' f f, | g\breve g1 | d'\breve. | 
-    b\breve b1 | f' f f | g\breve es1 | d\breve d1 |
-    f f d | a\breve b1 | g d'\breve | g,\longa_\fermata
-    
-    % lopuke
-%    g1 c4 d es d | c1 g\longa_\fermata
+    \stemDown
+    \partial 2*1
+    f2 | f4 f  d d | c2 e | g1 | c, |
+    r2 c | d e | f b,4 b | c1 | f, |
+    r2 f' | f4 e d2 | e f4 f | g2 g, | c1 |
+    r2 c | f e | f c | d4 c b2 | a g | d'1 |
+    r2 d | e f | d4 e f2 | f b, | a4 b c2 | 
+    f,\breve
 }
 
 
@@ -134,7 +123,6 @@ sanatKuu = \lyricmode {
 	\context Staff = "women" <<
 	    \context Voice = "sopranos" { \voiceOne \sopMusic }
 	    \context Voice = altosOne { \voiceTwo \altoOneMusic }
-%	    \context Voice = altosTwo { \voiceThree \altoTwoMusic }
 	>>
 
 	\lyricmode <<
@@ -146,8 +134,8 @@ sanatKuu = \lyricmode {
 
 	\context Staff = "men" <<
 	    \clef bass
-%	    \context Voice = "tenors" { \voiceOne \tenorMusic }
-%	    \context Voice = "basses" { \voiceTwo \bassMusic }
+	    \context Voice = "tenors" { \voiceOne \tenorMusic }
+	    \context Voice = "basses" { \voiceTwo \bassMusic }
 	>>
     >>
 
