@@ -24,9 +24,9 @@ sopMusic =   \relative c' {
     a4 a b b | c2 c | d1 | c1^\fermata |
     r2 c | f, g | a b4 a | g1 | f^\fermata 
     \bar ":|"
-    r2 f4 g | a2 a | g g4 f | e2 d | c1^\fermata |
-    r2 c'2 | c c | c c4 b | a2 d | c4 a b2 | a1^\fermata |
-    r2 d | c c | b a4 b | c2 d | c4 a g2 | 
+    r2 f4( g) | a2 a | g g4 f | e2 d | c1^\fermata |
+    r2 c'2 | c c | c c4( b | a2) d | c4( a b2) | a1^\fermata |
+    r2 d | c c | b a4( b) | c2 d | c4( a) g2 | 
     f\breve^\fermata \bar "||"
 
 }
@@ -70,16 +70,27 @@ bassMusic =  \relative c {
 }
 
 
-sanatEka = \lyricmode { 
+sanatEka = \lyricmode {
     \set stanza = "1."
-    ___ Vei- sat- kaam' sy- dä- men poh- --- jast',
-    Kiit- tä- kääm' Ju- ma- laa vah- vast' 
-    Kuin ar- mons' on meil- le näy- tän,
-    Ru- all' juo- mall' mei- tä täyt- tän,
-    E- läi- met, lin- nut on ra- vin- nut,
-    Ar- mol- li- sest' meill' ta- rin- nut,
-    Kaik' mi- tä me o- lem' tar- vin- neet.
+    <<
+    {
+    O puh- das Ju- ma- lan Ca- ri- tza,
+    Cuin ris- tin puu- sa pij- nat- tin,
+    }
+    \new Lyrics {
+    \set associatedVoice = "sopranos"
+    Meil- le si- nä ar- mos ta- ri- tze,
+    Waickas sil- loin co- wan pil- cat- tin.
+    }
+    >>
     
+    Mei- dän syn- dim si- nä can- --- noit
+    
+    Ja e- lä- män meil- len an- noit.
+    Ar- mah- da mei- dän pääl- lem, O JE- su!
+}
+
+sanatEkaKerto = \lyricmod {
 }
 
 sanatKol = \lyricmode { 
@@ -126,7 +137,8 @@ sanatKuu = \lyricmode {
 	>>
 
 	\lyricmode <<
-%	    \lyricsto "altosTwo" \new Lyrics \sanatEka
+%	    \lyricsto "sopranos" \new Lyrics \sanatEka
+            \new Lyrics \lyricsto "sopranos" \sanatEka
 %	    \lyricsto "altosTwo" \new Lyrics \sanatKol
 %	    \lyricsto "altosTwo" \new Lyrics \sanatVii
 %	    \lyricsto "altosTwo" \new Lyrics \sanatKuu
