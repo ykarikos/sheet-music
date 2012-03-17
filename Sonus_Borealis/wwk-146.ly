@@ -72,25 +72,18 @@ bassMusic =  \relative c {
 
 sanatEka = \lyricmode {
     \set stanza = "1."
-    <<
-    {
     O puh- das Ju- ma- lan Ca- ri- tza,
     Cuin ris- tin puu- sa pij- nat- tin,
-    }
-    \new Lyrics {
-    \set associatedVoice = "sopranos"
-    Meil- le si- nä ar- mos ta- ri- tze,
-    Waickas sil- loin co- wan pil- cat- tin.
-    }
-    >>
     
-    Mei- dän syn- dim si- nä can- --- noit
+    Mei- dän syn- dim si- nä can- -- _ noit
     
     Ja e- lä- män meil- len an- noit.
     Ar- mah- da mei- dän pääl- lem, O JE- su!
 }
 
-sanatEkaKerto = \lyricmod {
+sanatEkaKerto = \lyricmode {
+    Meil- le si- nä ar- mos ta- ri- tze,
+    Waickas sil- loin co- wan pil- cat- tin.
 }
 
 sanatKol = \lyricmode { 
@@ -137,8 +130,8 @@ sanatKuu = \lyricmode {
 	>>
 
 	\lyricmode <<
-%	    \lyricsto "sopranos" \new Lyrics \sanatEka
-            \new Lyrics \lyricsto "sopranos" \sanatEka
+	    \lyricsto "sopranos" \new Lyrics \sanatEka
+	    \lyricsto "sopranos" \new Lyrics \sanatEkaKerto
 %	    \lyricsto "altosTwo" \new Lyrics \sanatKol
 %	    \lyricsto "altosTwo" \new Lyrics \sanatVii
 %	    \lyricsto "altosTwo" \new Lyrics \sanatKuu
