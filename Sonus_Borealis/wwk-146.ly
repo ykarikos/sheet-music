@@ -78,7 +78,7 @@ sanatEka = \lyricmode {
     Mei- dän syn- dim si- nä can- -- _ noit
     
     Ja e- lä- män meil- len an- noit.
-    Ar- mah- da mei- dän pääl- lem, O JE- su!
+    Ar- mah- da mei- dän pääl- lem', O JE- su!
 }
 
 sanatEkaKerto = \lyricmode {
@@ -86,38 +86,34 @@ sanatEkaKerto = \lyricmode {
     Waickas sil- loin co- wan pil- cat- tin.
 }
 
+sanatToka = \lyricmode {
+    \set stanza = "2."
+    O Je- su, via- -- _ toin Ka- rit- sa!
+    Kuin sur- man al- le an- net- tiin,
+    
+    Mei- dän täh- tem' si- nä kuo- -- _ lit,
+    Ja syn- nit meilt' -- _ pois vuo- lit:
+    Ar- mah- da mei- dän pääl- lem', O JE- su!
+}
+
+sanatTokaKerto = \lyricmode { 
+    Mei-tä si- nä köy- hi- ä ra- vit- se,
+    Ehk' vää- rin pääl- les kan- net- tiin:
+}
+
 sanatKol = \lyricmode { 
     \set stanza = "3."
-    Kuin ih- mi- nen hen- --- gen saa- nut on, 
-    Koht' hä- nen ko- tans' val- mis on ___
-    Äi- tins' koh- dus vaik-ka kai- ta,
-    Siit' kyll' it- sens' ra- vit' tai- taa,
-    Ehk' ___ se ruo- ka on heik- ko viell'
-    Kui- tenk' ei puu- tu mi- tään siell',
-    Sii- hen ___ ast' ett' hän syn- tyy tääl'.
+    O Je- su, nuh- tee- toin Ka- rit- sa!
+    Kuin tah- dot ar- mos va- ris- taa
+    
+    Hel- ve- tin si- nä _ voi- -- _ tit,
+    Ja pi- rult' val- lan pois o- tit:
+    Suo meil- le _ nyt rau- ha, O JE- su!
 }
 
-sanatVii = \lyricmode { 
-    \set stanza = "5."
-    ___ Ka- lat ve- dest' ___ sa- nas jäl- keen,
-    Meil Ju- mal' an- nat pöy- däll'- kin 
-    Mu-nat lin- nuist' pie- nist' suu- --- rist'
-    Kanss' lin-nun po- jat meil- --- le niist':
-    Viel' meill' si-nun suo- mas- tas pää- --- näns',
-    Hir- vi, här -- \skip 1 kä, oi-nas, jä- nes,
-    On ru- aks' jäl- keen si- nun sään- nös.
-}
-
-sanatKuu = \lyricmode { 
-    \set stanza = "6."
-    Siis kiit- tä- kääm Her- --- raa ai- --- na,_Kuin
-    Py- hän Hen- kens' meil- le lai- naa,
-    Ett' hä- nen hy-vyy- tens' tie- --- däm',
-    Ain' siis hä- nen käs- kyns' teh- kääm'.
-    Hä- nen py-hän ni- --- mens' kun- ni- at'
-    Le-__vit- tä- kääm' ___ siis mo- ni- all':
-    Tä- tä ___ tah- too hän kuul- la ain! 
-%    A -- \skip 4 men.
+sanatKolKerto = \lyricmode { 
+    Mei- dän nyt syn- nis- ten pääl- -- _ le,
+    Kuin a- sum' al- haal' _ tääl- lä:
 }
 
 
@@ -132,9 +128,10 @@ sanatKuu = \lyricmode {
 	\lyricmode <<
 	    \lyricsto "sopranos" \new Lyrics \sanatEka
 	    \lyricsto "sopranos" \new Lyrics \sanatEkaKerto
-%	    \lyricsto "altosTwo" \new Lyrics \sanatKol
-%	    \lyricsto "altosTwo" \new Lyrics \sanatVii
-%	    \lyricsto "altosTwo" \new Lyrics \sanatKuu
+	    \lyricsto "sopranos" \new Lyrics \sanatToka
+	    \lyricsto "sopranos" \new Lyrics \sanatTokaKerto
+	    \lyricsto "sopranos" \new Lyrics \sanatKol
+	    \lyricsto "sopranos" \new Lyrics \sanatKolKerto
 	>>	
 
 	\context Staff = "men" <<
