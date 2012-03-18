@@ -14,8 +14,7 @@
     tagline = ""
 }
 
-sopMusic =   \relative c' {
-%   \transpose f g
+sopMusic = \transpose f g \relative c' {
     \key d \minor
     \stemUp
     \time 2/2
@@ -31,7 +30,7 @@ sopMusic =   \relative c' {
 
 }
 
-altoOneMusic =   \relative c' { 
+altoOneMusic = \transpose f g \relative c' { 
     \key d \minor
     \stemDown
     \partial 2*1
@@ -44,7 +43,7 @@ altoOneMusic =   \relative c' {
 }
 
 
-tenorMusic =  \relative c' { 
+tenorMusic = \transpose f g \relative c' { 
     \key d \minor
     \stemUp
     \partial 2*1
@@ -57,7 +56,7 @@ tenorMusic =  \relative c' {
     
 }
 
-bassMusic =  \relative c {
+bassMusic = \transpose f g \relative c {
     \key d \minor
     \stemDown
     \partial 2*1
