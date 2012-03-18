@@ -123,16 +123,10 @@ sanatKakstoistkerto = \lyricmode {
 
     \layout {
 	indent = 0.0
-%	line-width = 20.0\cm
-%	textheight = 29.0\cm
-%	interscoreline = 0\pt
-
-%	\context {
-
-	% a little smaller so lyrics can be closer to the staff. 
-%	    \Staff
-%	    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3) 
-%	}
+        \context {
+	  \Lyrics
+          \override LyricText #'font-size = #-1
+        } 
     }
 
     
@@ -144,4 +138,8 @@ sanatKakstoistkerto = \lyricmode {
     }
 
 
+}
+
+\paper {
+   #(set-paper-size "a4" 'landscape)
 }
