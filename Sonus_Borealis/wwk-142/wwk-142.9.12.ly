@@ -79,7 +79,7 @@ sanatYsi = \lyricmode {
 
 sanatYsikerto = \lyricmode { 
     Mi- nä hä-pi- än tein: si- nä vai- vat- tiin.
-    Mi- nun syn- --- tein täh- den si- nä pii -- nat- tiin.
+    Mi- nun syn -- _ tein täh- den si- nä pii -- nat- tiin.
 
 }
 
@@ -94,7 +94,7 @@ sanatKakstoist = \lyricmode {
 
 sanatKakstoistkerto = \lyricmode { 
     Ann' ___ mie-le- sän pii- nas ___ muis-to ol- la,
-    Sill' ___ mi- nu- a sil- --- loin ___ vah -- vis- ta.
+    Sill' ___ mi- nu- a sil -- _ loin ___ vah -- vis- ta.
 }
 
 \score { 
