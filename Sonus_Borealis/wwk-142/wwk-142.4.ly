@@ -4,7 +4,7 @@
 
 \include "deutsch.ly"
 
-\version "2.2.5"
+\version "2.12.3"
 
 %#(set-global-staff-size 16)
 
@@ -15,7 +15,7 @@
     tagline = ""
 }
 
-sopMusic = \notes  \relative c'' { 
+sopMusic =   \relative c'' { 
     \key d \minor
 %    \stemUp
     \time 3/2
@@ -31,71 +31,71 @@ sopMusic = \notes  \relative c'' {
 }
 
 
-sanatEka = \lyrics { 
+sanatEka = \lyricmode { 
     \set stanza = "1."
     O Je- su! kuin- kas o-let pii- nat- tu,/
     Pos- kill' pies- ty, syl- jett' ru- si- koit- tu./
 }
 
-sanatEkakerto = \lyrics { 
+sanatEkakerto = \lyricmode { 
 	Or- jan- tap- pu- --- roill' kruu- nat- tu,/
 	Sinun ruu- miis ruos- kit- tu, haa- voi- tet- tu,/
 	Pur- pu- rall' pil- --- kall' nau- --- ret- tu,/
-	Ve- ri p‰‰st', kas- voist' vuo- da- tet- tu,/
+	Ve- ri p√§√§st', kas- voist' vuo- da- tet- tu,/
 	Koko ruu- mis ver- --- ta tiuk- --- --- kui.
 }
 
-sanatToka = \lyrics { 
+sanatToka = \lyricmode { 
     \set stanza = "2."
-    Ris- tin p‰‰ll' j‰- se- net pin-go- te- tut,/
-    Jalat, k‰- det l‰- pit- se l‰- vis- te- tyt,/
+    Ris- tin p√§√§ll' j√§- se- net pin-go- te- tut,/
+    Jalat, k√§- det l√§- pit- se l√§- vis- te- tyt,/
 }
 
-sanatTokakerto = \lyrics { 
+sanatTokakerto = \lyricmode { 
 	E- ti- kall', sa- --- pell' juo- tet- tu,/
- 	Syd‰n rik- ki pil- --- kall' pis- --- tet- ty,/
+ 	Syd√§n rik- ki pil- --- kall' pis- --- tet- ty,/
 	Julmall' Ju-ma- lan vi- --- hall' run- --- nel- tu,/
-	Kylki kei- h‰‰l' l‰-pit- se tun- --- get- tu,/
+	Kylki kei- h√§√§l' l√§-pit- se tun- --- get- tu,/
 	Sur- ki- all' kuo- le- mall' sur- --- mat- tu.
 }
 
-sanatNel = \lyrics { 
+sanatNel = \lyricmode { 
     \set stanza = "4."
-	Suu- sas, Chris- te, ___ ei lˆytty pe- tost',/
-	Et si- n‰, Her- --- ra, v‰‰- rin teh- nyt,/
+	Suu- sas, Chris- te, ___ ei l√∂ytty pe- tost',/
+	Et si- n√§, Her- --- ra, v√§√§- rin teh- nyt,/
 }
 
-sanatNelkerto = \lyrics { 
-	Eik' ol- lut si- --- nus' yht‰‰n ri- kost'/
-	Etk' syn- nin tie- t‰ sin‰ k‰y- --- --- nyt:/
+sanatNelkerto = \lyricmode { 
+	Eik' ol- lut si- --- nus' yht√§√§n ri- kost'/
+	Etk' syn- nin tie- t√§ sin√§ k√§y- --- --- nyt:/
 	Puh- das, vi- a- --- toin kai- kist' o- lit,/
 	Kui- ten- kin katke- rast' kuo- --- --- lit,/
-	Meid‰n kaik- kein ih- mis- ten e- --- des- t‰m'.
+	Meid√§n kaik- kein ih- mis- ten e- --- des- t√§m'.
 }
 
 
-sanatKas = \lyrics { 
+sanatKas = \lyricmode { 
     \set stanza = "8."
-	Min‰ ain'yl- pi- ‰: ___ sin‰ hil- jai- nen,/
+	Min√§ ain'yl- pi- √§: ___ sin√§ hil- jai- nen,/
 	Puus- teill' ja purp- pu- rall' pil- --- kat- tu./
 }
 
-sanatKaskerto = \lyrics { 
-	Min‰ kova- kor- vai- nen: sin‰ kuu-li- ai- nen,/
-	Min‰ rˆy-ki- ‰: pii- keill' sin‰ kruu- --- nat- tu./
-	Min‰ tur-has' kun- ni- as': sin‰ syl- --- jet- ty./
-	Min‰ juo- mar': sa-pell' sin‰ juo- --- tet- tu./
-	Min‰ he-ku- mas': si- n‰ si-dott', nau- --- lit- tu.
+sanatKaskerto = \lyricmode { 
+	Min√§ kova- kor- vai- nen: sin√§ kuu-li- ai- nen,/
+	Min√§ r√∂y-ki- √§: pii- keill' sin√§ kruu- --- nat- tu./
+	Min√§ tur-has' kun- ni- as': sin√§ syl- --- jet- ty./
+	Min√§ juo- mar': sa-pell' sin√§ juo- --- tet- tu./
+	Min√§ he-ku- mas': si- n√§ si-dott', nau- --- lit- tu.
 }
 
 \score { 
-    \notes
+    
     \context StaffGroup <<
-	\context Staff = women <<
-	    \context Voice = sopranos { \voiceOne \sopMusic }
+	\context Staff = "women" <<
+	    \context Voice = "sopranos" { \voiceOne \sopMusic }
 	>>
 
-	\lyrics <<
+	\lyricmode <<
 %	    \lyricsto "sopranos" \new Lyrics \sanatEka
 %	    \lyricsto "sopranos" \new Lyrics \sanatEkakerto
 %	    \lyricsto "sopranos" \new Lyrics \sanatToka
@@ -109,21 +109,27 @@ sanatKaskerto = \lyrics {
     >>
 
 
-    \paper {
+    \layout {
 	indent = 0.0
-%	linewidth = 20.0\cm
+%	line-width = 20.0\cm
 %	textheight = 29.0\cm
 %	interscoreline = 0\pt
 
 %	\context {
 
 	% a little smaller so lyrics can be closer to the staff. 
-%	    \StaffContext
-%	    minimumVerticalExtent = #'(-3 . 3) 
+%	    \Staff
+%	    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3) 
 %	}
     }
 
-    \midi { 
-	\tempo 2=180 
+    
+  \midi {
+    \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 180 2)
+      }
     }
+
+
 }
