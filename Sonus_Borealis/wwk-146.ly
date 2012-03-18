@@ -15,6 +15,7 @@
 }
 
 sopMusic =   \relative c' {
+%   \transpose f g
     \key d \minor
     \stemUp
     \time 2/2
@@ -91,7 +92,7 @@ sanatToka = \lyricmode {
     Kuin sur- man al- le an- net- tiin,
     
     Mei- dän täh- tem' si- nä kuo- -- _ lit,
-    Ja syn- nit meilt' -- _ pois vuo- lit:
+    Ja syn- nit meilt' pois vuo- -- _ lit:
     Ar- mah- da mei- dän pääl- lem', O JE- su!
 }
 
@@ -107,11 +108,11 @@ sanatKol = \lyricmode {
     
     Hel- ve- tin si- nä _ voi- -- _ tit,
     Ja pi- rult' val- lan pois o- tit:
-    Suo meil- le _ nyt rau- ha, O JE- su!
+    Suo meil- le nyt rau- -- _ ha, O JE- su!
 }
 
 sanatKolKerto = \lyricmode { 
-    Mei- dän nyt syn- nis- ten pääl- -- _ le,
+    Mei- dän nyt syn- -- _ nis- ten pääl- le,
     Kuin a- sum' al- haal' _ tääl- lä:
 }
 
