@@ -33,7 +33,32 @@ SopOneMusic = \relative c'' {
   \time 4/2 cis\breve)( |
   \time 3/2 cis1.)( |
   \time 4/2 cis\breve) |
-
+% 5
+  \time 5/2 cis1 dis2 e dis |
+  \time 4/2 r2 cis4 dis e2 dis | cis( his) cis4 r4 cis2( |   cis) cis cis1 | 
+  \time 3/2 c r c( | c4) c a( g) a2 | a( gis1) | a1. |
+  r2 r2 a( | 
+  \time 4/2 a) a a1
+% 6
+  \time 3/2 as2 r2 f( | f4) g as2 g | f( e1)
+  \time 5/2 f2 r1 f1 |
+  \time 4/2 f\breve | r1 f1 |
+  \time 3/2 e2( f g) |
+  \time 4/2 as1 g( |
+  \time 3/2 g1.) | R1. |
+% 7
+  R1. | \time 5/2 r1 r2
+  \quiTollis g2.( g1)( |
+% 8
+  \time 3/2 g1.) | g2( a1) |
+  \time 5/2 << { \stemDown b1. } \new Voice { \voiceTwo \stemUp a1. } >>  a4 r4 r2 |
+  \time 3/2 g2( a1) |
+  \time 4/2 b a2 a |
+  \time 3/2  << { \stemDown g2 g1 } \new Voice { \voiceTwo \stemUp g2 g( fis) } >> |
+  \time 5/2 g1 a1. | R1*5/2 | 
+  \time 4/2 R\breve |
+  \time 3/2 R1. |
+% 9
 }
 
 SopOneLyrics = \lyricmode {
@@ -43,8 +68,21 @@ SopOneLyrics = \lyricmode {
   mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
   mi -- se -- re -- re, no -- bis.
   A -- gnus
-  A -- gnus de -- i,
-  A -- gnus de -- i,
-  A -- gnus de -- i,
-  A -- gnus de -- i
+  A -- gnus De -- i,
+  A -- gnus De -- i,
+  A -- gnus De -- i,
+  A -- gnus De -- i --
+  
+  mi -- se -- re -- re, mi -- se -- re -- re no -- bis,
+  mi -- se -- re -- re, mi -- se -- re -- re no -- bis,
+  mi -- se -- re -- re, mi -- se -- re -- re no -- bis,
+  A -- gnus
+  A -- gnus De -- i
+  
+  qui tol -- lis pec -- ca -- ta mun -- di,
+  qui tol -- lis pec -- ca -- ta mun -- di,
+  qui tol -- lis pec -- ca -- ta mun -- di --
+  
+  qui tol -- lis,
+  qui tol -- lis pec -- ca -- ta mun -- di,
 }

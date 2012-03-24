@@ -23,6 +23,7 @@ global = {
 %  indent = 0
 }
 
+\include "common.ly"
 \include "soprano-one.ly"
 \include "soprano-two.ly"
 \include "alto.ly"
