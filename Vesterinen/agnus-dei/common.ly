@@ -1,5 +1,5 @@
 
-quiTollis = \relative c' {
+quiTollis = {
   f2( g)
   \time 6/2 as g g f f( e)
   f g r

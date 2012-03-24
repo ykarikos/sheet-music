@@ -36,7 +36,7 @@ SopOneMusic = \relative c'' {
 % 5
   \time 5/2 cis1 dis2 e dis |
   \time 4/2 r2 cis4 dis e2 dis | cis( his) cis4 r4 cis2( |   cis) cis cis1 | 
-  \time 3/2 c r c( | c4) c a( g) a2 | a( gis1) | a1. |
+  \time 3/2 c2 r c( | c4) c a( g) a2 | a( gis1) | a1. |
   r2 r2 a( | 
   \time 4/2 a) a a1
 % 6
