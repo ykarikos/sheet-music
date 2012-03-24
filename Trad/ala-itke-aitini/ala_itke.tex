@@ -1,19 +1,15 @@
-% lilypond-book ala_itke.tex
-% latex ala_itke.latex
-% dvips ala_itke.dvi
+% lilypond-book --output=out --pdf ala_itke.tex
+% cd out
+% pdflatex ala_itke
 
 \documentclass[a4paper,finnish]{article}
-%\usepackage{amsfonts}
-%\usepackage{latexsym}
-\usepackage[latin1]{inputenc}
-\usepackage{babel}
 
 % "suomalaiset" kappaleet:
-% ei sisennyst‰, isompi riviv‰li
+% ei sisennyst√§, isompi riviv√§li
 \setlength{\parindent}{0mm}
 \setlength{\parskip}{3mm plus0.5mm minus0.5mm}
 
-% suurennetaan sit‰ laatikkoa, mihin se teksti tulee
+% suurennetaan sit√§ laatikkoa, mihin se teksti tulee
 % leveys
 \addtolength{\hoffset}{-2cm}
 %\addtolength{\textwidth}{4cm}
@@ -22,19 +18,15 @@
 \addtolength{\voffset}{-1cm}
 \addtolength{\textheight}{2cm}
 
-% dokumetti alkaa t‰st‰
+% dokumetti alkaa t√§st√§
 \begin{document}
-
-% k‰sket‰‰n lilypondille, ett‰ headeri pit‰‰ ottaa mukaan
-\input titledefs.tex
-\def\preLilypondExample{\def\mustmakelilypondtitle{}}
 
 % nuotit
 \lilypondfile[20pt]{ala_itke-notes.ly}
 
 \vspace{0.5cm}
 Sovitus tehty on kymmenkieliselle kanteleelle, jonka kielet on
-viritetty s‰velille
+viritetty s√§velille
 \texttt{g}, \texttt{a}, \texttt{d1}, \texttt{es1}, \texttt{fis1},
 \texttt{g1}, \texttt{a1}, \texttt{b1}, \texttt{c2} ja \texttt{d2}.
 

@@ -1,22 +1,23 @@
-%% Älä itke äitini
-%% Sovitus kanteleelle: Yrjö Kari-Koskinen
-%% Lilypond: (C) 2002, Yrjö Kari-Koskinen
+#(ly:set-option 'old-relative)
+%% Ã„lÃ¤ itke Ã¤itini
+%% Sovitus kanteleelle: YrjÃ¶ Kari-Koskinen
+%% Lilypond: (C) 2002, YrjÃ¶ Kari-Koskinen
 %% <yrjo.kari-koskinen@hut.fi>
 
 \include "deutsch.ly"
 
-\version "1.4.9"
+\version "2.12.3"
 
-%\include "paper26.ly"
+%#(set-global-staff-size 26)
 
 \header {
-  title = "Älä itke äitini"
+  title = "Ã„lÃ¤ itke Ã¤itini"
   composer = "Trad."
-  arranger = "Yrjö Kari-Koskinen"
-  enteredby = "Yrjö Kari-Koskinen"
+  arranger = "YrjÃ¶ Kari-Koskinen"
+  enteredby = "YrjÃ¶ Kari-Koskinen"
 }
 
-melodia = \notes \relative c' \context Voice = M {
+melodia =  \relative c' \context Voice = M {
 	\time 4/4    
 	\key g \minor
 %	\stemUp
@@ -26,12 +27,12 @@ melodia = \notes \relative c' \context Voice = M {
 	\bar "|."
 }
 
-saestys = \notes \context Voice = S {
+saestys =  \context Voice = S {
 	\time 4/4    
 	\key g \minor
 	\clef bass
-%	\property Voice.autoBeaming = ##f
-%	\property Voice.TupletBracket \set #'tuplet-bracket-visibility = ##f
+%	\set autoBeaming = ##f
+%	\override TupletBracket   #'bracket-visibility = ##f
 %	\stemDown
 
 	\times 2/3 { g,8 d g}
@@ -72,20 +73,20 @@ saestys = \notes \context Voice = S {
 
 \score { 
 
-  \context StaffGroup = kannel <
+  \context StaffGroup = "kannel" <<
 
-    <
-   \context Staff = mel \notes \melodia
-    >
+    <<
+   \context Staff = "mel"  \melodia
+    >>
 
-    <
-    \context Staff = sae \notes \saestys
-    >
-  >
+    <<
+    \context Staff = "sae"  \saestys
+    >>
+  >>
 
-  \paper {
-     linewidth = 16.0\cm
-%     linewidth = \textwidth
+  \layout {
+     line-width = 16.0\cm
+%     line-width = \textwidth
   }
 
 }
