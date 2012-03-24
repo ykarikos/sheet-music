@@ -27,7 +27,10 @@ TenOneMusic = \relative c' {
   h2 ais4( h) cis2 d4( cis) r4 
   h4 ais( h) cis d( cis1)( |
   \time 2/2 cis1) |
-% 4
+% 4 / 38
+  r2 cis1 | h h2 cis | cis gis1 | h1 h |
+% 5
+  
 }
 
 TenOneLyrics = \lyricmode {

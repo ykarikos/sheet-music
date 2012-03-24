@@ -25,8 +25,13 @@ AltoMusic = \relative c'' {
   h) cis d( cis4) r4 
   h2 ais4( h) cis2 d4( cis) r4 
   h4 ais( h) cis d( cis2)( |  
-  \time 2/2 cis1) |
-% 4
+  \time 2/2 cis1)( |
+% 4 / 38
+  \time 3/2 cis1.)( |
+  \time 4/2 cis\breve)( |
+  \time 3/2 cis1.)( |
+  \time 4/2 cis\breve) |
+  
 }
 
 AltoLyrics = \lyricmode {
