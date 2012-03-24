@@ -4,7 +4,7 @@
 
 \include "deutsch.ly"
 
-\version "2.6.0"
+\version "2.12.3"
 
 %#(set-global-staff-size 16)
 
@@ -202,7 +202,7 @@ sanatYhd = \lyricmode {
 
     \layout {
 	indent = 0.0
-%	linewidth = 20.0\cm
+%	line-width = 20.0\cm
 %	textheight = 29.0\cm
 	interscoreline = 0\pt
 
@@ -210,11 +210,17 @@ sanatYhd = \lyricmode {
 
 	% a little smaller so lyrics can be closer to the staff. 
 %	    \Staff
-%	    minimumVerticalExtent = #'(-3 . 3) 
+%	    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3) 
 %	}
     }
 
-    \midi { 
-	\tempo 1=180 
+    
+  \midi {
+    \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 180 1)
+      }
     }
+
+
 }

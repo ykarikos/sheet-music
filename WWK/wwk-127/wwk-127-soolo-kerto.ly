@@ -4,7 +4,7 @@
 
 \include "deutsch.ly"
 
-\version "2.6.0"
+\version "2.12.3"
 
 %#(set-global-staff-size 16)
 
