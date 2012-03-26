@@ -28,6 +28,17 @@ TenTwoMusic = \relative c' {
 % 4 / 38
   r2 cis'( h) | a1 h2 h | cis fis,1 | gis1 fis |
 % 5
+  cis'1 h2 h h | r2 cis4 his his2 his | cis1 cis4 r a2( | a) e e1 |
+  g2 r g( | g4) a g2. d4 | fis2( e1) | e1. | r2 r f( | r) c c1 |
+% 6
+  es2 r as( | as4) g f( es) f2 | c1. | f2 r1 r1 | R\breve |
+  R\breve | R1. | R\breve | r2 f1 | f2 f f | 
+% 7
+  f g1 | f1 f1. | r1 \quiTollis
+% 8
+  g4( g1) | a2( d,1) | d1. f4 r r2 | g2( f1) | f f2 f | 
+  g d1 | g fis1. | R1*5/2 | R\breve | R1. |
+% 9
 }
 
 TenTwoLyrics = \lyricmode {
@@ -40,4 +51,18 @@ TenTwoLyrics = \lyricmode {
   A -- gnus de -- i,
   A -- gnus de -- i,
   A -- gnus de -- i
+
+  qui tol -- lis pec -- ca -- ta mun -- di
+
+  mi -- se -- re -- re, mi -- se -- re -- re no -- bis,
+  mi -- se -- re -- re, mi -- se -- re -- re no -- bis,
+  mi -- se -- re -- re, mi -- se -- re -- re no -- bis,
+  qui tol -- lis pec -- ca -- ta mun -- di
+  
+  qui tol -- lis pec -- ca -- ta mun -- di,
+  qui tol -- lis pec -- ca -- ta mun -- di,
+  qui tol -- lis pec -- ca -- ta mun -- di --
+  
+  qui tol -- lis,
+  qui tol -- lis pec -- ca -- ta mun -- di,
 }
