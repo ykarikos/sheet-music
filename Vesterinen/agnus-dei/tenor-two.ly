@@ -46,6 +46,11 @@ TenTwoMusic = \relative c' {
   b1 r2 | g8( a b4 f2 c') | d r | c4( g a d8 c d4 a) | g( g8 a h4 c8 d |
 % 11
   \time 3/2 d cis d4) a2( a8 g fis e) | \time 2/2 fis4 r r2 |
+  gis4( h fis8 gis ais h cis2) | h2( h4. a8 h4. cis8 |
+  dis4 cis gis2) gis | fis1 r2 | fis2( gis1) ais1 r2 | R1. | R1. |
+% 12
+  R\breve | r1 gis( | gis) fis | fis1. fis2 r2 |
+  dis1.( gis\breve) | dis\breve( dis1.) |
 }
 
 TenTwoLyrics = \lyricmode {
@@ -77,6 +82,10 @@ TenTwoLyrics = \lyricmode {
   do -- na no -- bis,
   do -- na no -- bis,
   do -- na no -- bis pa -- cem,
+
   pa -- cem, pa -- cem,
-  pa -- cem,
+  pa -- cem, pa -- cem,
+  pa -- cem, pa -- cem,
+
+  Do -- na no -- bis pa -- cem.
 }

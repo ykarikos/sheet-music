@@ -51,6 +51,13 @@ AltoMusic = \relative c'' {
   h4 r h2. cis4 d1 | des4 r r2 es( | es4) f ges2 f | es( d1) |
   es1 r2 | b'( a1) | b2 r | g( fis1) | g4 r r2 |
 % 11
+  << { \stemDown d'2( cis1) } \new Voice { \voiceTwo \stemUp d1. } >> |
+  d4 r r2 | h( ais1) | h r2 |
+  fis2( eis1) | fis1.( | fis1) fis2 | cis1 r2 | R1. |
+  << { \stemDown dis2( eis1) } \new Voice { \voiceTwo \stemUp fis2( s1) } >> |
+% 12
+  fis\breve | r1 gis( | gis) gis | gis1. gis2 r2 |
+  h,1.( ais\breve) | h\breve( h1.) |
 }
 
 AltoLyrics = \lyricmode {
@@ -84,6 +91,11 @@ AltoLyrics = \lyricmode {
   do -- na no -- bis,
   do -- na no -- bis,
   do -- na no -- bis pa -- cem,
+
   pa -- cem, pa -- cem,
   pa -- cem, pa -- cem,
+  pa -- cem, pa -- cem,
+  pa -- cem,
+
+  Do -- na no -- bis pa -- cem.
 }

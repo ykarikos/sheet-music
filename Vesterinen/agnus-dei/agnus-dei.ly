@@ -13,6 +13,7 @@ global = {
 
 \header {
   title = "Agnus Dei"
+%  title = \markup { \override #'(font-name . "URW Chancery L") "Agnus Dei" }
   subtitle = "sekakuorolle a cappella"
   composer = "Johannes Vesterinen, 2006"
 %  poet = ""

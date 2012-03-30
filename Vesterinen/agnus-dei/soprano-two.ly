@@ -55,6 +55,16 @@ SopTwoMusic = \relative c'' {
   \time 3/2 c8( d c b a1) |
   \time 2/2 a4 r r2 |
 % 11
+  h4.( a8 a1) | 
+  << { \stemDown gis2( gis8 a gis fis }
+  \new Voice { \voiceTwo \stemUp h4. cis8 h a gis fis } >> |
+  gis4 fis8 gis fis2) fis | fis1 r2 |
+  cis2( fis1) | ais1 r2 | h4.( ais8 gis1) | gis r2 | R1. |
+  h4.( a!8 gis1) |
+% 12
+  gis\breve( | gis) | gis1 ais | ais1. ais2 r | dis,1.( dis\breve) | 
+  << { \stemDown cis\breve( cis1.) }
+  \new Voice { \voiceTwo \stemUp dis\breve( dis1.) } >> |
 }
 
 SopTwoLyrics = \lyricmode {
@@ -88,6 +98,10 @@ SopTwoLyrics = \lyricmode {
   do -- na no -- bis,
   do -- na no -- bis,
   do -- na no -- bis pa -- cem,
+  pa -- cem, pa -- cem,
+  pa -- cem, pa -- cem,
+  pa -- cem, pa -- cem,
   pa -- cem,
-  pa -- cem,
+
+  Do -- na no -- bis pa -- cem.
 }
