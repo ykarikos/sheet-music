@@ -41,6 +41,12 @@ TenOneMusic = \relative c' {
   g1.)  | b2( a1) | a1. c4 r r2 | d( c1) | b c2 c |
   a1 a2 | c1 d1. | R1*5/2 | R\breve | d1 cis2 |
 % 9
+  d1 e2 | r d a | c1 c2 | d( e1.) | a,2 r r c( |
+  c) c b1 | a4 r a2. a4 c2 | as2 r es( | es) es ges1 |
+% 10
+  g!4 r g2. g4 g1 | ges4 r r2 ces2( | ces4) b as2. f4 | es1( f2) |
+  es1 r2 | b'4( g c d8 es f2) | e! r | e4( c d2 a4 h8 c) d4 r r2 |
+% 11
 }
 
 TenOneLyrics = \lyricmode {
@@ -68,5 +74,13 @@ TenOneLyrics = \lyricmode {
   qui tol -- lis,
   qui tol -- lis pec -- ca -- ta mun -- di,
 
-  do -- na
+  do -- na no -- bis do -- na no -- bis, 
+  do -- na no -- bis pa -- cem,
+  do -- na no -- bis,
+  do -- na no -- bis,
+  do -- na no -- bis,
+  do -- na no -- bis pa -- cem,
+  
+  pa -- cem, pa -- cem,
+
 }

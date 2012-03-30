@@ -47,6 +47,12 @@ BassMusic = \relative c' {
   b2 a1 | g1 g'1. | 
   R1*5/2 | R\breve | R1. |
 % 9
+  R1. | r2 d c | b1 c2 | d( cis1.) | d2 r r b( |
+  b) b b1 | a4 r r2 r1 | r2 r as( | as) as ces1 |
+% 10
+  g4 r r1 r | r2 r ces( | ces4) ces ces2 des | as( b1) |
+  es,1 r2 | es'2( f1) | c2 r | c4( d8 e d1) | g,2 r |
+% 11
 }
 
 BassLyrics = \lyricmode {
@@ -71,4 +77,11 @@ BassLyrics = \lyricmode {
 
   qui tol -- lis
   qui tol -- lis pec -- ca -- ta mun -- di,
+
+  do -- na no -- bis pa -- cem,
+  do -- na no -- bis,
+  do -- na no -- bis,
+  do -- na no -- bis pa -- cem,
+  pa -- cem, pa -- cem,
+  pa -- cem,
 }

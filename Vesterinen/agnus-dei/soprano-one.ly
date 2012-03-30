@@ -59,6 +59,13 @@ SopOneMusic = \relative c'' {
   \time 4/2 R\breve |
   \time 3/2 R1. |
 % 9
+  R1. | r2 d e << { \stemDown e1 } \new Voice { \voiceTwo \stemUp f1 } >> e2 |
+  d( cis1.) | d2 r2 r1 |
+  R\breve | r2 cis2. cis4 c!2 | c2 r2 r | R\breve
+% 10
+  r2 h2. h4 b1 | b4 r r2 ges( | ges4) ges es2 as | as( f1) |
+  f1 r2 | es'4( d8 es c1) | c2.( b8 a | g1) g2 | g4 r r2 |
+% 11
 }
 
 SopOneLyrics = \lyricmode {
@@ -85,4 +92,12 @@ SopOneLyrics = \lyricmode {
   
   qui tol -- lis,
   qui tol -- lis pec -- ca -- ta mun -- di,
+  
+  do -- na no -- bis pa -- cem,
+  do -- na no -- bis,
+  do -- na no -- bis,
+  do -- na no -- bis pa -- cem,
+  pa -- cem,
+  pa -- cem,
+
 }

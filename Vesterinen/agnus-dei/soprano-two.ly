@@ -40,8 +40,21 @@ SopTwoMusic = \relative c'' {
   g1.) | d2( g1) | g1. g1( | g) g2 | e e1 e2 |
   g a1 |
   << { \stemDown a1 } \new Voice { \voiceTwo \stemUp b1 } >> d1.( |
-  d1)( d1.)( | d\breve)( | d1.)
+  d1)( d1.)( | d\breve)( | d1.)(
 % 9
+  d1.)( | d2) d d | d1 d2 | 
+  \time 4/2 d\breve | a2 r2 r1 |
+  R\breve | r2 e2. e4 g2 |
+  \time 3/2 as2 r2 r |
+  \time 4/2 R\breve |
+% 10
+  \time 5/2 r2 d,2. d4 g1 |
+  \time 3/2 ges4 r ges2. f4 | es( des) ces( b) des2( | c! es1) |
+  es1 r2 | g4( a b1) |
+  \time 2/2 g2 r2 |
+  \time 3/2 c8( d c b a1) |
+  \time 2/2 a4 r r2 |
+% 11
 }
 
 SopTwoLyrics = \lyricmode {
@@ -71,4 +84,10 @@ SopTwoLyrics = \lyricmode {
   qui tol -- lis,
   qui tol -- lis pec -- ca -- ta mun -- di,
   
+  do -- na no -- bis pa -- cem,
+  do -- na no -- bis,
+  do -- na no -- bis,
+  do -- na no -- bis pa -- cem,
+  pa -- cem,
+  pa -- cem,
 }

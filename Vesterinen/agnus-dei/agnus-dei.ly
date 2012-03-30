@@ -6,7 +6,7 @@
 global = { 
   \numericTimeSignature
   \time 7/2 
-  \autoBeamOff
+%  \autoBeamOff
   \key a \minor
   \set Staff.midiInstrument = #"voice oohs"
 }
