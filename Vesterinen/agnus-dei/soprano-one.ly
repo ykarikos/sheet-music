@@ -48,7 +48,14 @@ SopOneMusic = \relative c'' {
   \time 3/2 g1.) | R1. |
 % 7
   R1. | \time 5/2 r1 r2
-  \quiTollis g2.( g1)( |
+  f2( g)
+  \time 6/2 as g g f f( e)
+  f g r
+  f4( g) as2 g4 g
+  f2 f4( e) f2 g4 r4
+  f( g) as g
+  g f f( e) f 
+  g2.( g1)( |
 % 8
   \time 3/2 g1.) | g2( a1) |
   \time 5/2 << { \stemDown b1. } \new Voice { \voiceTwo \stemUp a1. } >>  a4 r4 r2 |
