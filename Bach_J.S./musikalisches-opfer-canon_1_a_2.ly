@@ -21,7 +21,7 @@ global = {
     indent = 0.0
 }
 
-lowerOne = \relative c {
+thema = {
     c2 es | g as | h, r4 g'4( |
     g) fis2 f4( | f) e2 es4( | 
     es) d des c | h g c f |
@@ -38,7 +38,7 @@ lowerOne = \relative c {
     c4 g es c 
 }
 
-upperOne = \relative c' {
+themareverse = {
 c4 es g c |
 h8 c d es f es d c |
 d g, d' f es d c h |
@@ -58,6 +58,19 @@ f) fis2 g4( |
 g) r h,2 |
 as' g |
 es c |
+}
+
+
+lowerOne = \relative c {
+    \thema
+    \bar "||"
+    \themareverse
+    \bar "|."
+}
+
+upperOne = \relative c' {
+    \themareverse
+    \thema
 }
 
 \score { 
