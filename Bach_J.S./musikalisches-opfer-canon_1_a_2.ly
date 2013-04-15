@@ -12,8 +12,8 @@ global = {
 \header {
     title = "Musikalisches Opfer (BWV 1079)"
     subtitle = "Canon 1 a 2, super thema regium"
-    composer = "Johann Sebastian Bach"
-    enteredby = "Yrjö Kari-Koskinen (31.3.1685–28.7.1750)"
+    composer = "Johann Sebastian Bach (1685–1750)"
+    enteredby = "Yrjö Kari-Koskinen"
 %    tagline = "foo"
 }
 
