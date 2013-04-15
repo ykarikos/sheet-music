@@ -6,7 +6,7 @@ global = {
   \time 2/2
 %  \autoBeamOff
    \key c \minor
-%  \set Staff.midiInstrument = #"voice oohs"
+   \set Staff.midiInstrument = #"harpsichord"
 }
       
 \header {
@@ -90,8 +90,13 @@ upperOne = \relative c' {
     >>
   >>
 
-  \midi { }
-  
+  \midi { 
+    \context {
+      \Score
+      tempoWholesPerMinute = #(ly:make-moment 60 2)
+    }
+  }
+
   \layout { }
 
 }
