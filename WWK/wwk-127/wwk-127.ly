@@ -4,7 +4,7 @@
 
 \include "deutsch.ly"
 
-\version "2.12.3"
+\version "2.16.0"
 
 %#(set-global-staff-size 16)
 
@@ -221,10 +221,7 @@ sanatYhd = \lyricmode {
 
     
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 1)
-      }
+    \tempo 1 = 180
     }
 
 
