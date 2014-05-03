@@ -43,10 +43,13 @@ stanzaOneLyrics = \lyricmode {
 }
 
 
-BassMusic = \relative c {
+BassMusic = \relative c, {
   \set Staff.instrumentName = #"Basso"
   \set Staff.shortInstrumentName = "B"
   \clef bass
+  es4 | es' d c b | g( b) es c | d es f b, | es2. es,4 |
+  es'2. g4 | as g f es | d( c) b es | c d es es | b2. d4 |
+  es d c g | as( f') c es | as, g as b | es,2.
 }
 
 
