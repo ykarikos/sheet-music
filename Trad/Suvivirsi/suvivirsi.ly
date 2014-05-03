@@ -30,16 +30,29 @@ SopMusic = \relative c'' {
   \set Staff.shortInstrumentName = "S"
 
   \partial 4 g4
-  \bar "|:"
-  g f es d | es( f) g g | b b as as | g2. g4
-  \bar ":|" 
+  \repeat volta 2 {
+    g f es d | es( f) g g | b b as as | 
+  }
+  \alternative {
+    { g2. g4 }
+    { g2. b4 }
+  } {}
 
-  g2. b4 | c b as g | f2 f4 g | as as g g | f2. f4 |
+  c b as g | f2 f4 g | as as g g | f2. f4 |
   g f es d | c2 c4 b | c es es d  | es2.
   \bar "|."
 }
 
 stanzaOneLyrics = \lyricmode {
+  Jo jou- tui ar- mas ai- ka ja su- vi su- loi- nen. Kau-
+}
+
+stanzaOneVoltaLyrics = \lyricmode {
+  \skip 1
+  nii- sti jo- ka paik- kaa ko- ris- taa kuk- ka-
+  \skip 1 \skip 1
+  nen. Nyt siu- na- us- taan suo- pi taas läm- pö au- rin- gon.
+  Se luon- non uu- deks' luo- pi, sen kut- suu e- lo- hon.
 }
 
 
@@ -60,8 +73,11 @@ BassMusic = \relative c, {
       \new Voice = "Sop" { 
         \global \SopMusic
       }
-     \new Lyrics \lyricsto "Sop" {
-       \stanzaOneLyrics
+      \new Lyrics \lyricsto "Sop" {
+        \stanzaOneLyrics
+      }
+      \new Lyrics \lyricsto "Sop" {
+        \stanzaOneVoltaLyrics
      }
     >>
     \new Staff <<
