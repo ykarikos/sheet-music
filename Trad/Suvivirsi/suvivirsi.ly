@@ -7,7 +7,6 @@ global = {
 %  \numericTimeSignature
   \time 4/4 
 %  \autoBeamOff
-  \key es \major
   \set Staff.midiInstrument = #"voice oohs"
 }
 
@@ -25,9 +24,11 @@ global = {
 }
 
 
-SopMusic = \relative c'' {
-  \set Staff.instrumentName = #"Soprano"
-  \set Staff.shortInstrumentName = "S"
+SopMusic = \transpose es a, \relative c'' {
+  \key es \major
+  \set Staff.instrumentName = #"Tenore"
+  \set Staff.shortInstrumentName = "T"
+  \clef "treble_8"
 
   \partial 4 g4
   \repeat volta 2 {
@@ -56,7 +57,8 @@ stanzaOneVoltaLyrics = \lyricmode {
 }
 
 
-BassMusic = \relative c, {
+BassMusic = \transpose es a \relative c, {
+  \key es \major
   \set Staff.instrumentName = #"Basso"
   \set Staff.shortInstrumentName = "B"
   \clef bass
