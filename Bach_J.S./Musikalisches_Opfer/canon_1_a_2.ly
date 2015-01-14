@@ -32,7 +32,7 @@ thema = {
     as d, es f g f es d |
     es f g as b as g f |
     g as b c des b as g |
-    a h c d es c h a |
+    a h c d es c h! a! |
     h c d es f d g, d' |
     c d es f es d c h |
     c4 g es c
@@ -42,8 +42,8 @@ themareverse = {
 c4 es g c |
 h8 c d es f es d c |
 d g, d' f es d c h |
-a h c es d c h a |
-g as b des c b as g |
+a h c es d c h! a! |
+g as! b! des c b as g |
 f g as b as g f es |
 d es f g f es d as' |
 g f es c' h a g f |
