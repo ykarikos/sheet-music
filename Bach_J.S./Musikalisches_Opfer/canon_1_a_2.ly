@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.16.0"
 \include "suomi.ly"
 
 global = {
@@ -8,7 +8,7 @@ global = {
    \key c \minor
    \set Staff.midiInstrument = #"harpsichord"
 }
-      
+
 \header {
     title = "Musikalisches Opfer (BWV 1079)"
     subtitle = "Canon 1 a 2, super thema regium"
@@ -23,7 +23,7 @@ global = {
 
 thema = {
     c2 es | g as | h, r4 g'4( |
-    g) fis2 f4( | f) e2 es4( | 
+    g) fis2 f4( | f) e2 es4( |
     es) d des c | h g c f |
     es2 d | c es |
 
@@ -35,7 +35,7 @@ thema = {
     a h c d es c h a |
     h c d es f d g, d' |
     c d es f es d c h |
-    c4 g es c 
+    c4 g es c
 }
 
 themareverse = {
@@ -73,7 +73,7 @@ upperOne = \relative c' {
     \thema
 }
 
-\score { 
+\score {
   \new GrandStaff <<
     \new Staff <<
       \new Voice = upper {
@@ -90,11 +90,8 @@ upperOne = \relative c' {
     >>
   >>
 
-  \midi { 
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 60 2)
-    }
+  \midi {
+    \tempo 2 = 60
   }
 
   \layout { }
