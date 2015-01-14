@@ -72,26 +72,26 @@ thema-left = {
     es) d des c | h g c f |
     es2 d | c es |
 
-    g8 f g c g es d es |
-    f g a h c es, f g |
+    g8^2 f g c g es d es |
+    f g a^3 h c es, f g |
     as d, es f g f es d |
     es f g as b as g f |
     g as b c des b as g |
     a h c d es c h! a! |
     h c d es f d g, d' |
-    c d es f es d c h |
+    c^4 d es f es d c h |
     c4 g es c
 }
 
 themareverse-left = {
   c4 es g c |
-  h8 c d es f es d c |
-  d g, d' f es d c h |
-  a h c es d c h! a! |
-  g as! b! des c b as g |
+  h8^5 c d es f es d c |
+  d^2 g, d' f es d c h |
+  a h c^1 es^2 d^1 c h! a! |
+  g^5 as! b! des^2 c^1 b as g |
   f g as b as g f es |
-  d es f g f es d as' |
-  g f es c' h a g f |
+  d es f g f es d as'^2 |
+  g^3 f es c' h a g f |
   es d es g c g f g |
 
   es2 c |
