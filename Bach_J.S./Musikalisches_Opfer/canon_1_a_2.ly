@@ -36,7 +36,7 @@ thema-right = {
     c2 es | g as | h, r4 g'4( |
     g) fis2 f4( | f) e2 es4( |
     es) d des_4 c | h g c f |
-    es2 d | c es |
+    es2 d\prallmordent | c es |
 
     g8 f g c g es d es |
     f g a h c es, f g |
@@ -75,7 +75,7 @@ thema-left = {
     c2 es | g as | h, r4 g'4( |
     g) fis2 f4( | f) e2 es4( |
     es) d des c | h g c f |
-    es2 d | c es |
+    es2 d\prall | c es |
 
     g8^2 f g c g es d es |
     f g a^3 h c es, f g |
