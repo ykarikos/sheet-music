@@ -25,6 +25,11 @@ global = {
 
 \paper {
     indent = 0.0
+    #(define fonts
+        (make-pango-font-tree "Baskerville"
+                              "Nimbus Sans"
+                              "Luxi Mono"
+                              (/ staff-height pt 20)))
 }
 
 thema-right = {
