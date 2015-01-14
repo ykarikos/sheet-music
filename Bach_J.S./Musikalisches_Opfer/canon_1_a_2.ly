@@ -1,3 +1,9 @@
+% J. S. Bach's Crab Canon from The Musical Offering
+% http://en.wikipedia.org/wiki/The_Musical_Offering
+
+% Played by Pierre Hantaï in Spotify:
+% http://open.spotify.com/track/3XUKWj9TItJv0xLoZutPJI
+
 \version "2.16.0"
 \include "suomi.ly"
 
