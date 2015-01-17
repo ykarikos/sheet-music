@@ -48,7 +48,7 @@ thema-right = {
     a h c d es c h! a! |
     h c d es f d g, d' |
     c d es f es d c h |
-    c4 g es c
+    c4 g es\prall c
 }
 
 themareverse-right = {
