@@ -6,7 +6,7 @@
 
 \include "deutsch.ly"
 
-\version "2.12.3"
+\version "2.17.14"
 
 %#(set-global-staff-size 26)
 
@@ -32,39 +32,39 @@ saestys =  \context Voice = S {
 	\key g \minor
 	\clef bass
 %	\set autoBeaming = ##f
-%	\override TupletBracket   #'bracket-visibility = ##f
+%	\override TupletBracket.bracket-visibility = ##f
 %	\stemDown
 
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 d g} |
-	\times 2/3 { a,8 d fis}
-	\times 2/3 { a,8 d fis}
-	\times 2/3 { a,8 d fis}
-	\times 2/3 { a,8 d fis} |
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 d g} |
-	\times 2/3 { a,8 d fis}
-	\times 2/3 { a,8 d fis}
-	\times 2/3 { a,8 d fis}
-	\times 2/3 { a,8 d fis} |
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 d g} |
-	\times 2/3 { a,8 d fis}
-	\times 2/3 { a,8 d fis}
-	\times 2/3 { g,8 es g}
-	\times 2/3 { g,8 es g} |
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 es g}
-	\times 2/3 { a,8 d fis}
-	\times 2/3 { a,8 d fis} |
-	\times 2/3 { g,8 d g}
-	\times 2/3 { g,8 d g}
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 d g} |
+	\tuplet 3/2 { a,8 d fis}
+	\tuplet 3/2 { a,8 d fis}
+	\tuplet 3/2 { a,8 d fis}
+	\tuplet 3/2 { a,8 d fis} |
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 d g} |
+	\tuplet 3/2 { a,8 d fis}
+	\tuplet 3/2 { a,8 d fis}
+	\tuplet 3/2 { a,8 d fis}
+	\tuplet 3/2 { a,8 d fis} |
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 d g} |
+	\tuplet 3/2 { a,8 d fis}
+	\tuplet 3/2 { a,8 d fis}
+	\tuplet 3/2 { g,8 es g}
+	\tuplet 3/2 { g,8 es g} |
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 es g}
+	\tuplet 3/2 { a,8 d fis}
+	\tuplet 3/2 { a,8 d fis} |
+	\tuplet 3/2 { g,8 d g}
+	\tuplet 3/2 { g,8 d g}
 	g,2 
 
 	\bar "|."
