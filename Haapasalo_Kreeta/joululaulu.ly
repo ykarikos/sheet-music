@@ -7,7 +7,8 @@ global = {
 %  \numericTimeSignature
   \time 3/4
 %  \autoBeamOff
-   \key d \minor
+  \key a \minor
+  \clef bass
 %  \set Staff.midiInstrument = #"voice oohs"
 }
       
@@ -33,7 +34,7 @@ end = \relative c' {
   a,4 cis | d2 |
 }
 
-upperOne = \relative c' {
+upperOne = \transpose d a, \relative c' {
   \start
   \end
   \time 3/4 \start
@@ -42,7 +43,7 @@ upperOne = \relative c' {
   \bar "|."
 }
 
-lowerOne = \relative c {
+lowerOne = \transpose d a, \relative c {
   f4 a2 | g4 a2 | 
   a8 h cis2 | d2. |
   b2 | a4 g | f2 |
@@ -79,8 +80,7 @@ stanzaOneLyrics = \lyricmode {
     \new Staff <<
       \new Voice = lower {
         \global
-	\clef bass
-	\lowerOne
+      	\lowerOne
       }
     >>
   >>
