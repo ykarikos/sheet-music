@@ -1,6 +1,8 @@
 \version "2.18.0"
 \include "suomi.ly"
 
+#(set-global-staff-size 18)
+
 global = {
 %  \numericTimeSignature
   \time 3/4
@@ -52,12 +54,26 @@ lowerOne = \relative c {
   
 }
 
+stanzaOneLyrics = \lyricmode {
+  Tu -- li tuik -- kaa pä -- re -- hes -- sä,
+  ei oo sii -- nä pe -- re -- hes -- sä
+  lam -- pun lois -- to -- a.
+
+  Sy -- dä -- mel -- lä toi -- vo -- val -- la
+  a -- las -- ton -- na pal -- ja -- hal -- la
+  viet -- tää lap -- set lat -- ti -- al -- la
+  jou -- lun aat -- to -- a.
+}
+
 \score { 
   \new ChoirStaff <<
     \new Staff <<
       \new Voice = upper {
         \global
-	\upperOne
+      	\upperOne
+      }
+      \new Lyrics \lyricsto "upper" {
+         \stanzaOneLyrics
       }
     >>
     \new Staff <<
