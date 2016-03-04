@@ -4,7 +4,7 @@
 
 \include "deutsch.ly"
 
-\version "2.12.3"
+\version "2.18.0"
 
 %#(set-global-staff-size 16)
 
@@ -22,7 +22,7 @@ sopMusic = \transpose f g \relative c' {
     f2 |
     a4 a b b | c2 c | d1 | c1^\fermata |
     r2 c | f, g | a b4 a | g1 | f^\fermata 
-    \bar ":|"
+    \bar ":|."
     r2 f4( g) | a2 a | g g4 f | e2 d | c1^\fermata |
     r2 c'2 | c c | c c4( b | a2) d | c4( a b2) | a1^\fermata |
     r2 d | c c | b a4( b) | c2 d | c4( a) g2 | 
@@ -146,16 +146,13 @@ sanatKolKerto = \lyricmode {
 
         \context {
         \Lyrics
-          \override LyricText #'font-size = #-1
+          \override LyricText.font-size = #-1
 	} 
     }
 
     
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 1)
-      }
+    \tempo 1 = 180
     }
 
 }

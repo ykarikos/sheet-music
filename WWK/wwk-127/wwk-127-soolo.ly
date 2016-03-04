@@ -4,7 +4,7 @@
 
 \include "deutsch.ly"
 
-\version "2.16.0"
+\version "2.18.0"
 
 %#(set-global-staff-size 16)
 
@@ -27,7 +27,7 @@ sopMusic =   \relative c'' {
     % lopuke
 %    \time 4/2
 %    g1 g2. a8 h | 
-%    \set Score.measureLength = #(ly:make-moment 5 1)
+%    \set Score.measureLength = #(ly:make-moment 5/1)
 %    c1 h\longa^\fermata \bar ".|"
 }
 
@@ -36,7 +36,7 @@ sopLopuke  =   \relative c'' {
     \key d \minor
     \time 4/2
     g1 g2. a8 h | 
-    \set Score.measureLength = #(ly:make-moment 5 1)
+    \set Score.measureLength = #(ly:make-moment 5/1)
     c1 h\longa^\fermata \bar ".|"
 }
 
@@ -210,7 +210,7 @@ sanatYhd = \lyricmode {
 
 	% a little smaller so lyrics can be closer to the staff. 
 %	    \Staff
-%	    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3) 
+%	    \override VerticalAxisGroup.minimum-Y-extent = #'(-3 . 3) 
 %	}
     }
 

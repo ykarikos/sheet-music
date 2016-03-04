@@ -4,7 +4,7 @@
 
 \include "deutsch.ly"
 
-\version "2.12.3"
+\version "2.18.0"
 
 %#(set-global-staff-size 16)
 
@@ -119,16 +119,13 @@ sanatKaskerto = \lyricmode {
 
 	% a little smaller so lyrics can be closer to the staff. 
 %	    \Staff
-%	    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3) 
+%	    \override VerticalAxisGroup.minimum-Y-extent = #'(-3 . 3) 
 %	}
     }
 
     
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 2)
-      }
+    \tempo 2 = 180
     }
 
 

@@ -4,7 +4,7 @@
 
 \include "deutsch.ly"
 
-\version "2.12.3"
+\version "2.18.0"
 
 %#(set-global-staff-size 16)
 
@@ -30,13 +30,13 @@ sopMusic =   \relative c'' {
     d1 d d | c c a | b\breve g1 | a\breve. | 
     d\breve d1 | c c a | b\breve g1 | a\breve a1 |
     f f a | c\breve d1 | b a\breve | 
-    \set Score.measureLength = #(ly:make-moment 4 1)
+    \set Score.measureLength = #(ly:make-moment 4/1)
     g\longa^\fermata \bar "||"
 
     % lopuke
 %    \time 4/2
 %    g1 g2. a8 h | 
-%    \set Score.measureLength = #(ly:make-moment 5 1)
+%    \set Score.measureLength = #(ly:make-moment 5/1)
 %    c1 h\longa^\fermata \bar ".|"
 }
 
@@ -200,16 +200,13 @@ sanatKuu = \lyricmode {
 
 	% a little smaller so lyrics can be closer to the staff. 
 %	    \Staff
-%	    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3) 
+%	    \override VerticalAxisGroup.minimum-Y-extent = #'(-3 . 3) 
 %	}
     }
 
     
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 1)
-      }
+    \tempo 1 = 180
     }
 
 

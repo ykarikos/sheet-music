@@ -4,7 +4,7 @@
 
 \include "deutsch.ly"
 
-\version "2.12.3"
+\version "2.18.0"
 
 %#(set-global-staff-size 16)
 
@@ -125,16 +125,13 @@ sanatKakstoistkerto = \lyricmode {
 	indent = 0.0
         \context {
 	  \Lyrics
-          \override LyricText #'font-size = #-1
+          \override LyricText.font-size = #-1
         } 
     }
 
     
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 2)
-      }
+    \tempo 2 = 180
     }
 
 
