@@ -14,7 +14,8 @@ global = {
     title = "Kantele"
     composer = "Yrjö Kari-Koskinen"
     enteredby = "Yrjö Kari-Koskinen"
-    tagline = "This work is licensed under a Creative Commons Attribution 4.0 International License."
+    copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+    tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
 }
 
 \paper {

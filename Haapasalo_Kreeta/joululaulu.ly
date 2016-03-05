@@ -17,7 +17,8 @@ global = {
     subtitle = "Tuli tuikkaa pärehessä"
     composer = "Kreeta Haapasalo"
     enteredby = "Yrjö Kari-Koskinen"
-%    tagline = "foo"
+    copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+    tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
 }
 
 \paper {

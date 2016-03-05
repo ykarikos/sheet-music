@@ -12,7 +12,8 @@
     title = "WWK 142"
     poet = "san: Hemminki Maskulainen"
     arranger = "sov: Johannes Vesterinen"
-    tagline = ""
+    copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+    tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
 }
 
 sopMusic =   \relative c'' { 
