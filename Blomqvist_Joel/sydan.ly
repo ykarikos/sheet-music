@@ -1,8 +1,8 @@
 % ly2dvi -P sydan.ly
 
-%% Joel Blomqvist: On sydän hellä (mi rakastaapi)
+%% Joël Blomqvist: On sydän hellä (mi rakastaapi)
 %% Lilypond: (C) 2002, Yrjö Kari-Koskinen
-%% <yrjo.kari-koskinen@hut.fi>
+%% <ykk@peruna.fi>
 
 \include "deutsch.ly"
 
@@ -12,7 +12,7 @@
 
 \header {
   title = "On sydän hellä (mi rakastaapi)"
-  composer = "Joel Blomqvist"
+  composer = "Joël Blomqvist"
   enteredby = "Yrjö Kari-Koskinen"
 }
 
