@@ -15,6 +15,8 @@
   composer = "Trad."
   arranger = "Yrjö Kari-Koskinen"
   enteredby = "Yrjö Kari-Koskinen"
+  copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+  tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
 }
 
 melodia =  \relative c' \context Voice = M {

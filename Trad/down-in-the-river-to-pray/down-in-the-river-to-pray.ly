@@ -19,8 +19,8 @@ global = {
   instrument = "Voice (SSATBrB)"
   style = "Gospel"
   maintainer = "Yrjö Kari-Koskinen"
-  copyright = "Creative Commons Attribution-ShareAlike 3.0"
-  source = ""
+  copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+  tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
 }
 
 \paper {

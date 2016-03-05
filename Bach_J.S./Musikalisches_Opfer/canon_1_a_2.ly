@@ -22,7 +22,8 @@ global = {
     subtitle = "Canon 1 a 2, super thema regium"
     composer = "Johann Sebastian Bach (1685–1750)"
     enteredby = "Yrjö Kari-Koskinen"
-%    tagline = "foo"
+    copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+    tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
 }
 
 \paper {

@@ -11,7 +11,8 @@
 \header {
     title = "WWK 146"
     arranger = "sov. J. Vesterinen & J.H. Schein"
-    tagline = ""
+    copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+    tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
 }
 
 sopMusic = \transpose f g \relative c' {
