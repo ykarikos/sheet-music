@@ -1,3 +1,5 @@
+\version "2.18.0"
+
 % Vesterinen: Agnus Dei
 % Bass part
 

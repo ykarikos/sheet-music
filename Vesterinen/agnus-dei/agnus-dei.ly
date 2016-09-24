@@ -1,4 +1,4 @@
-\version "2.12.3"
+\version "2.18.0"
 \include "suomi.ly"
 
 #(set-global-staff-size 18)
@@ -91,10 +91,7 @@ global = {
     >>
   >>
   \midi { 
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 70 2)
-    }
+    \tempo 2 = 70
   }
   \layout { }
 }
