@@ -22,7 +22,7 @@ SopOneMusic = \relative c'' {
   r2 c d | << { es1 d2 } \new Voice { \voiceOne d1 d2 } >> |
   \time 4/2  << { c\breve } \new Voice { \voiceOne c2( h1.) } >> |
   \time 3/2 h1. | 
-  \time 5/2 R\breve*5/4 |
+  \time 5/2 R\breve*5/4 | \break
   \time 3/2 R1. |
   h1. | << { \stemDown ais2( h1) } \new Voice { \voiceTwo \stemUp h2( fis1) } >> |
   \time 6/2 r1 r1 r2 h | ais( h) cis d( cis) r2 |
