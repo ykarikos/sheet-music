@@ -10,3 +10,7 @@ quiTollis = {
   g f f( e) f 
    
 }
+
+subP = \markup { \italic sub \dynamic p }
+
+subF = \markup { \italic sub \dynamic f }

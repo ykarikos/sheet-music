@@ -9,7 +9,7 @@ TenTwoMusic = \relative c' {
 % 1
   a\breve\p( a1.) | \time 4/2 a\breve( | d1.) r2 |
   \time 5/2 r1. a1 | \time 3/2 h1. | d1.\< |
-  \time 5/2 a1\>( h1.) | r1\! a1. | \time 4/2 h1 h4 r4 r2 | 
+  \time 5/2 a1\>( h1.) | r1\! a1. | \time 4/2 h1\< h4\> r4\! r2 | 
   \time 3/2 a1. | \time 4/2 f1 g2 a |
 % 2
   d1 h1 | \time 5/2 c1. c1( | c1)( c1.) | 

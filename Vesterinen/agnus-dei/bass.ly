@@ -8,8 +8,8 @@ BassMusic = \relative c' {
   \clef bass
 % 1
   r\breve\p a1. | \time 4/2 a\breve( | a1.) r2 |
-  \time 5/2 a1.( a1) | \time 3/2 a1. | a1. |
-  \time 5/2 a1( a1.) | r1 a2( g1) | \time 4/2 a1 a4 r4 r2 | 
+  \time 5/2 a1.( a1) | \time 3/2 a1. | a1.\< |
+  \time 5/2 a1\>( a1.) | r1\! a2( g1) | \time 4/2 a1\< a4\> r4\! r2 | 
   \time 3/2 a2( g1) | \time 4/2 g1 g2 g2 |
 % 2
   a1 h1 | \time 5/2 h1. c1( | c1)( c1.) | 
