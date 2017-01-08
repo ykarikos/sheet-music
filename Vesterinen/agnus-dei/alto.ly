@@ -22,7 +22,11 @@ AltoMusic = \relative c'' {
   \time 4/2 es2( d1.) |
   \time 3/2 h1. |
   \time 5/2 R\breve*5/4 | \time 3/2 R1. |
-  h1. | << { cis2( d1) } \new Voice { \voiceTwo h1.} >> |
+  h1. | << 
+    { \slurUp cis2( d1) } 
+    \new Voice 
+    { \voiceTwo h1.} 
+  >> |
   r1 r2 h ais( h) | cis d( cis) r h ais( |
   h) cis d( cis4) r4 
   h2 ais4( h) cis2 d4( cis) r4 

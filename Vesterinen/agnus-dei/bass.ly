@@ -21,8 +21,11 @@ BassMusic = \relative c' {
   as1 b4 r4 | r2 c h | a1 b2 | 
   \time 4/2 c\breve | \time 3/2 h1. |
   \time 5/2 r1 h1. |
-  \time 3/2 << { \stemDown h1.( h1) } \new Voice { \voiceOne \stemUp cis1.( | d1) } >>
-  r2 | R1. |
+  \time 3/2 << 
+    { \stemDown \slurDown h1.( h1) } 
+    \new Voice 
+    { \voiceOne cis1.( | d1) } 
+  >> r2 | R1. |
   \time 6/2 h2 ais( h) cis d( cis) r
   h ais( h) cis d( cis4) r4 
   h2 ais4( h) cis2 d4( cis) r4 

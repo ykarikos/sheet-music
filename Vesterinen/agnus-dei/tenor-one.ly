@@ -22,7 +22,11 @@ TenOneMusic = \relative c' {
   \time 4/2 c'\breve |
   \time 3/2 h4 r r2 h( |
   \time 5/2 h1)( h1.) |
-  \time 3/2 << { \stemDown ais1.( | h1) } \new Voice { \voiceTwo \stemUp h1.( | fis1) } >> r2 |
+  \time 3/2 << 
+    { \stemDown ais1. \glissando | h1 } 
+    \new Voice 
+    { \voiceTwo \stemUp h1. \glissando | fis1 } 
+  >> r2 |
   R1. |
   \time 6/2 r1 h2 ais( h) cis | d( cis) r
   h ais( h) cis d( cis4) r4 
@@ -63,7 +67,7 @@ TenOneLyrics = \lyricmode {
   qui tol -- lis, qui tol -- lis pec -- ca -- ta mun -- di
   mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
   mi -- se -- re -- re, no -- bis.
-  A -- gnus
+  A -- gnus \skip 1
   A -- gnus De -- i,
   A -- gnus de -- i,
   A -- gnus de -- i,

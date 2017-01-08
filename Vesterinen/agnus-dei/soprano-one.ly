@@ -24,7 +24,12 @@ SopOneMusic = \relative c'' {
   \time 3/2 h1.\p | 
   \time 5/2 R\breve*5/4 | \break
   \time 3/2 R1. |
-  h1. | << { \stemDown ais2( h1)\< } \new Voice { \voiceTwo \stemUp h2( fis1) } >> |
+  h1. | 
+  << 
+    { \stemDown ais2 \glissando h1\< } 
+    \new Voice 
+    { \voiceTwo \stemUp h2 \glissando fis1 } 
+  >> |
   \time 6/2 r1\!^"Più mosso" r1 r2\mf h | ais( h) cis d( cis) r2 |
   h ais( h) cis d( cis4) r4 |
   h2 ais4( h) cis2 d4( cis) r4 
@@ -95,7 +100,7 @@ SopOneLyrics = \lyricmode {
   mi -- se -- re -- re, mi -- se -- re -- re,
   mi -- se -- re -- re, no -- bis, mi -- se -- re -- re,
   mi -- se -- re -- re, no -- bis.
-  A -- gnus
+  A -- gnus \skip 1
   A -- gnus De -- i,
   A -- gnus De -- i,
   A -- gnus De -- i,
