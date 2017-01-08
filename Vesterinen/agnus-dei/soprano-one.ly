@@ -87,7 +87,7 @@ SopOneMusic = \relative c'' {
   \time 3/2 h1) h2 | h1 r2 |
   h4.( ais8 gis1) | gis1 r2 | fis2(\mp eis1) | fis1.(\> | fis)(\p^"Tempo I" | fis)( |
 % 12
-  \time 4/2 fis\breve)\> | R\breve\! | gis1 ais | 
+  \time 4/2 fis\breve)\> | R\breve\! | gis1\p ais | 
   \time 5/2 h1.\< ais2\> r2\! |
   \time 7/2 gis1.(\pp 
   << { \stemDown fisis\breve) } \new Voice { \voiceTwo \stemUp gis\breve } >> |
