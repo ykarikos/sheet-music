@@ -1,0 +1,35 @@
+% lilypond-book --output=out --pdf ala_itke.tex
+% cd out
+% pdflatex ala_itke
+
+\documentclass[a4paper,finnish]{article}
+
+\usepackage[utf8]{inputenc}
+
+% "suomalaiset" kappaleet:
+% ei sisennystä, isompi riviväli
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{3mm plus0.5mm minus0.5mm}
+
+% suurennetaan sitä laatikkoa, mihin se teksti tulee
+% leveys
+\addtolength{\hoffset}{-2cm}
+%\addtolength{\textwidth}{4cm}
+\setlength{\textwidth}{16cm}
+% korkeus
+\addtolength{\voffset}{-1cm}
+\addtolength{\textheight}{2cm}
+
+% dokumetti alkaa tästä
+\begin{document}
+
+% nuotit
+\lilypondfile[20pt]{ala_itke-notes.ly}
+
+\vspace{0.5cm}
+Sovitus tehty on kymmenkieliselle kanteleelle, jonka kielet on
+viritetty sävelille
+\texttt{g}, \texttt{a}, \texttt{d1}, \texttt{es1}, \texttt{fis1},
+\texttt{g1}, \texttt{a1}, \texttt{b1}, \texttt{c2} ja \texttt{d2}.
+
+\end{document}

@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.18.0"
 \include "suomi.ly"
 
 #(set-global-staff-size 18)
@@ -19,8 +19,8 @@ global = {
   instrument = "Voice (SSATBrB)"
   style = "Gospel"
   maintainer = "Yrjö Kari-Koskinen"
-  copyright = "Creative Commons Attribution-ShareAlike 3.0"
-  source = ""
+  copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+  tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
 }
 
 \paper {
@@ -37,7 +37,7 @@ SopOneMusic = \relative c' {
   g'4 g8 f | a c g16( f8.) | a8 g f4 | f16 f8. d16( c8.) |
   g'4 g8 f | a c g16( f8.) | a8 g16 f  f f d8 | c2
 
-  \bar "||:"
+  \bar ".|:-||"
   r8 f f a | a a16 a a a a8 | a4 b16 b b b | b8 a c b | a g f d |
   f8. a16 a8 g | a c c4 | b16 b8 b16 a4( | a2) \mark "Fine" 
   \bar "||" 
@@ -75,7 +75,7 @@ SopTwoMusic = \relative c' {
   \set Staff.midiMaximumVolume = #0.3
 
   R2 * 17 
-  \bar "||:"
+  \bar ".|:-||"
   r8 c c d | f f16 f f f f8 | f4 g16 g g a | g8 f a g | f d c a |
   c8. d16 f8 d | f a g4 | f16 f8 d16 c4( | c2) |
 
@@ -205,23 +205,20 @@ BassMusic = \relative c {
     >>
   >>
   \midi { 
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 70 4)
-    }
+    \tempo 4 = 70
   }
   \layout { 
     \context {
-     \RemoveEmptyStaffContext
+     \Staff \RemoveEmptyStaves
    }
     \context {
      \Score
-     \override VerticalAxisGroup #'remove-first = ##t
+     \override VerticalAxisGroup.remove-first = ##t
     }
     \context {
       \ChoirStaff 
       % If only one non-empty staff in a system exists, still print the backet
-      \override SystemStartBracket #'collapse-height = #1
+      \override SystemStartBracket.collapse-height = #1
     }
   }
 }

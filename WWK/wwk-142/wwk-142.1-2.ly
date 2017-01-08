@@ -4,7 +4,7 @@
 
 \include "deutsch.ly"
 
-\version "2.12.3"
+\version "2.18.0"
 
 %#(set-global-staff-size 16)
 
@@ -12,7 +12,8 @@
     title = "WWK 142"
     poet = "san: Hemminki Maskulainen"
     arranger = "sov: Johannes Vesterinen"
-    tagline = ""
+    copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+    tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
 }
 
 sopMusic =   \relative c'' { 
@@ -119,16 +120,13 @@ sanatKaskerto = \lyricmode {
 
 	% a little smaller so lyrics can be closer to the staff. 
 %	    \Staff
-%	    \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3) 
+%	    \override VerticalAxisGroup.minimum-Y-extent = #'(-3 . 3) 
 %	}
     }
 
     
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 180 2)
-      }
+    \tempo 2 = 180
     }
 
 

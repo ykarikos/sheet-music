@@ -2,3 +2,6 @@
 *.pdf
 *.ps
 *~
+*.aux
+*.log
+/Trad/ala-itke-aitini/out
