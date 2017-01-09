@@ -21,7 +21,7 @@ SopTwoMusic = \relative c'' {
   \time 4/2 g\breve\> |
   \time 3/2 h1.\p |
   \time 5/2 R\breve*5/4 | \time 3/2 R1. |
-  h1. | fis2( e1)\< | r1\! r1\mf h'2 ais( | h) cis d( cis) r h |
+  h1. | fis2( e1)\< | r1\! r1-\tweak X-offset #5 \mf h'2 ais( | h) cis d( cis) r h |
   ais( h) cis d( cis4) r4 
   h2 ais4( h) cis2 d4( cis) r4 
   h4 ais( h) cis d( |
@@ -37,7 +37,7 @@ SopTwoMusic = \relative c'' {
   as2 as2. g4 | f( es) des( c) f2 | f1 f2(\p | f1.)( f1) | e( f) |
   r1 r2 f | f1. | g1 g( | g1.)\> | R1.\! |
 % 7
-  R1. | r1 r1\mf \quiTollis g4( g1)( |
+  R1. | r1 r1-\tweak X-offset #4 \mf \quiTollis g4( g1)( |
 % 8
   g1.)\< | d2(\f g1) | g1. g1( | g) g2 | e e1 e2 |
   g a1 |
@@ -61,13 +61,16 @@ SopTwoMusic = \relative c'' {
   << { \stemDown gis2( gis8 a gis fis }
   \new Voice { \voiceTwo \stemUp h4. cis8 h a gis fis } >> |
   gis4 fis8 gis fis2) fis | fis1 r2 |
-  cis2( fis1) | ais1 r2 | h4.(\mf ais8 gis1) | gis r2 | R1. |
-  h4.(\mp a!8 gis1) |
+  cis2( fis1) | ais1 r2-\tweak X-offset #2 \mf | h4.( ais8 gis1) | gis r2 | R1.-\tweak X-offset #4 \mp |
+  h4.( a!8 gis1) |
 % 12
-  gis\breve(\> | gis)\! | gis1\p ais |
-  ais1.\< ais2\> r | dis,1.(\pp dis\breve) |
-  << { \stemDown cis\breve( cis1.)\fermata }
-  \new Voice { \voiceTwo \stemUp dis\breve( dis1.) } >> |
+  gis\breve(\> | gis)\! | gis1-\tweak X-offset #-5 \p ais |
+  ais1.\< ais2\> r\! | dis,1.(\pp dis\breve) |
+  <<
+    { \stemDown cis\breve( cis1.)\fermata }
+  \new Voice
+    { \voiceTwo \stemUp dis\breve( dis1.) }
+  >> |
 }
 
 SopTwoLyrics = \lyricmode {

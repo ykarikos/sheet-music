@@ -31,6 +31,7 @@ SopOneMusic = \relative c'' {
     { \voiceTwo \stemUp h2 \glissando fis1 } 
   >> |
   \time 6/2 r1\!^"Più mosso" r1 r2\mf h | ais( h) cis d( cis) r2 |
+% 4
   h ais( h) cis d( cis4) r4 |
   h2 ais4( h) cis2 d4( cis) r4 
   h4 ais( h) |
@@ -42,7 +43,7 @@ SopOneMusic = \relative c'' {
   \time 4/2 cis\breve) |
 % 5
   \time 5/2 cis1-\subF dis2 e dis |
-  \time 4/2 r2 cis4 dis e2 dis | cis( his) cis4 r4 cis2(-\subP |   cis) cis cis1 | 
+  \time 4/2 r2 cis4 dis e2 dis | cis( his) cis4 r4 cis2(-\subP | cis) cis cis1 |
   \time 3/2 c2 r c( | c4) c a( g) a2 | a( gis1) | a1. |
   r2 r2\pp a( | 
   \time 4/2 a) a a1
@@ -75,7 +76,6 @@ SopOneMusic = \relative c'' {
 % 9
   R1. | r2\mp d e << { \stemDown e1 } \new Voice { \voiceTwo \stemUp f1 } >> e2 |
   \time 4/2 d( cis1.) | d2 r2 r1 |
-
   R\breve | r2\p cis2. cis4 c!2 | \time 3/2 c2 r2 r | \time 4/2 R\breve
 % 10
   \time 5/2 r2 h2. h4 b1 | b4 r r2\mf ges( | ges4) ges es2 as | as( f1) |
@@ -87,7 +87,7 @@ SopOneMusic = \relative c'' {
   \time 3/2 h1) h2 | h1 r2 |
   h4.( ais8 gis1) | gis1 r2 | fis2(\mp eis1) | fis1.(\> | fis)(\p^"Tempo I" | fis)( |
 % 12
-  \time 4/2 fis\breve)\> | R\breve\! | gis1\p ais | 
+  \time 4/2 fis\breve)\> | R\breve\! | gis1-\tweak X-offset #-5 \p ais |
   \time 5/2 h1.\< ais2\> r2\! |
   \time 7/2 gis1.(\pp 
   << { \stemDown fisis\breve) } \new Voice { \voiceTwo \stemUp gis\breve } >> |
