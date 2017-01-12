@@ -52,7 +52,7 @@ TenTwoMusic = \relative c' {
   dis4 cis gis2) gis | fis1 r2-\tweak X-offset #2 \mf |
   fis2( gis1) ais1 r2 | R1. | R1. |
 % 12
-  R\breve | r1\p gis( | gis) fis | fis1.\< fis2\> r2\! |
+  R\breve | r1-\tweak X-offset #3 \p gis( | gis) fis | fis1.\< fis2\> r2\! |
   dis1.(\pp gis\breve) | dis\breve( dis1.)\fermata |
 }
 

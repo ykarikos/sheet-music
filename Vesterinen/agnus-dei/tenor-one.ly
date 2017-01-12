@@ -48,7 +48,7 @@ TenOneMusic = \relative c' {
   a1 a2 | c1 d1. | R1*5/2 | R\breve | d1-\tweak X-offset #-5 \p cis2 |
 % 9
   d1 e2 | r\mp d a | c1 c2 | d( e1.) | a,2 r r\p c( |
-  c) c b1 | a4 r a2. a4 c2 | as2 r es( | es) es ges1 |
+  c) c b1 | a4 r a2. a4 c2 | as2 r \slurDown es( | es) es ges1 |
 % 10
   g!4 r g2. g4 g1 | ges4 r r2\mf ces2( | ces4) b as2. f4 | es1( f2) |
   es1\< r2 | b'4(\f g c d8 es f2) | e! r | e4( c d2 a4 h8 c) d4 r r2 |
@@ -57,11 +57,11 @@ TenOneMusic = \relative c' {
   cis2( h4. cis8 dis4. e8 | fis e dis4 cis2) cis | cis1 r2-\tweak X-offset #2 \mf |
   cis1. | h1 r2 | R1. | R1. |
 % 12
-  R\breve | r1\p gis( | gis) gis |
+  R\breve | r1-\tweak X-offset #3 \p gis( | gis) gis |
   gis1.\< gis2\> r\! | 
   ais1.\pp dis,\breve |
   << { \stemDown gis\breve( gis1.)\fermata }
-  \new Voice { \voiceTwo \stemUp ais\breve( ais1.) } >> |
+  \new Voice { \voiceTwo \stemUp \slurUp ais\breve( ais1.) } >> |
 }
 
 TenOneLyrics = \lyricmode {

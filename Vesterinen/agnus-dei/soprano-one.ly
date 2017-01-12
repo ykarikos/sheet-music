@@ -49,7 +49,7 @@ SopOneMusic = \relative c'' {
   \time 4/2 a) a a1
 % 6
   \time 3/2 as2 r2 f( | f4) g as2 g | f( e1)
-  \time 5/2 f2 r1\p f1 |
+  \time 5/2 f2 r1-\tweak X-offset #3 \p f1 |
   \time 4/2 f\breve | r1 f1 |
   \time 3/2 e2( f g) |
   \time 4/2 as1 g( |
@@ -85,7 +85,7 @@ SopOneMusic = \relative c'' {
   g'8( fis e fis e4. d8 e2) | 
   \time 2/2 e4( d8 e d cis h a |
   \time 3/2 h1) h2 | h1 r2 |
-  h4.( ais8 gis1) | gis1 r2 | fis2(\mp eis1) | fis1.(\> | fis)(\p^"Tempo I" | fis)( |
+  h4.( ais8 gis1) | gis1 r2-\tweak X-offset #2 \mp | fis2( eis1) | fis1.(\> | fis)(\p^"Tempo I" | fis)( |
 % 12
   \time 4/2 fis\breve)\> | R\breve\! | gis1-\tweak X-offset #-5 \p ais |
   \time 5/2 h1.\< ais2\> r2\! |

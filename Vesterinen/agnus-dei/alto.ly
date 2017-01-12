@@ -13,7 +13,7 @@ AltoMusic = \relative c'' {
 % 2
   e1 gis | \time 5/2 e1.\mf g1 | r1\pp c,1.( |
   \time 3/2 c2) b1 | << { b1 b4  } \new Voice { \voiceTwo as1 b4 } >> r4 |
-  r2\p c h! | << {a!1\> h4 } \new Voice { \voiceTwo h1 h4 } >> r4\! |
+  r2\p c\< h! | << {a!1\> h4 } \new Voice { \voiceTwo h1 h4 } >> r4\! |
   r2\mp c g | g1 g2 |
   \time 5/2 c1( c1.)( | c1) c1.\< |
   \time 3/2 r2\f c g' |
@@ -43,7 +43,7 @@ AltoMusic = \relative c'' {
   cis) dis e1 | es2 r f( | f4) f e!2 d | e1. | e1. |
   r2 r\pp c( | c) c f1 |
 % 6
-  es2 r es( | es4) des f2 d | c1. | f2 r1 f1 | f\breve |
+  es2 r es( | es4) des f2 d | c1. | f2 r1-\tweak X-offset #3 \p f1 | f\breve |
   r1 f | e1. | f1 f( | f1.)\> | R1.\!
 % 7
   R1. | R1*5/2-\tweak X-offset #13 \mf | \quiTollis g2.( |
