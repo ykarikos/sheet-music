@@ -6,7 +6,7 @@
 SopTwoMusic = \relative c'' {
   \set Staff.instrumentName = #"Soprano II"
 % 1
-  r\breve\p a1. | \time 4/2 gis\breve( | a1.) r2 |
+  r\breve\p a1. | \time 4/2 gis\breve(\< | a1.)\> r2\! |
   \time 5/2 a1.( a1) | \time 3/2 gis2( a1) | a1.\< |
   \time 5/2 a1\>( a1.) | r1\! a2( h1) | \time 4/2 h1\< gis4\> r4\! r2 |
   \time 3/2 a2(\cresc h1) | \time 4/2 h1 h2 a |

@@ -6,7 +6,7 @@
 AltoMusic = \relative c'' {
   \set Staff.instrumentName = #"Alto"
 % 1
-  a\breve\p( a1.) | \time 4/2 e\breve( | e1.) r2 |
+  a\breve\p( a1.) | \time 4/2 e\breve(\< | e1.)\> r2\! |
   \time 5/2 r1. a1 | \time 3/2 e1. | g1.\< |
   \time 5/2 h1\>( e,1.) | r1\! a1. | \time 4/2 a\breve |
   \time 3/2 a1 a2\cresc | \time 4/2 a1 a2 a |
