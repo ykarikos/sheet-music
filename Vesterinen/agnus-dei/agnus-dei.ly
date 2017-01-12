@@ -22,10 +22,10 @@ global = {
 }
 
 \paper {
-  top-margin = 13\mm
-  bottom-margin = 13\mm
-  left-margin = 13\mm
-  right-margin = 13\mm
+  top-margin = 15\mm
+  bottom-margin = 15\mm
+  left-margin = 15\mm
+  right-margin = 15\mm
   #(define fonts
       (make-pango-font-tree "Big Caslon"
                             "Nimbus Sans"
