@@ -12,16 +12,25 @@ global = {
 }
 
 \header {
-  title = "Agnus Dei"
-%  title = \markup { \override #'(font-name . "URW Chancery L") "Agnus Dei" }
-  subtitle = "sekakuorolle a cappella"
-  composer = "Johannes Vesterinen, 2006"
-%  poet = ""
-%  tagline = ""
+  title = \markup { \fontsize #4 \bold "Agnus Dei" }
+  subtitle = "mixed choir a cappella"
+  composer = "Johannes Vesterinen, 5.11.2006"
+  enteredby = "Yrjö Kari-Koskinen"
+%  copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+%  tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
+  tagline = ""
 }
 
 \paper {
-%  indent = 0
+  top-margin = 13\mm
+  bottom-margin = 13\mm
+  left-margin = 13\mm
+  right-margin = 13\mm
+  #(define fonts
+      (make-pango-font-tree "Big Caslon"
+                            "Nimbus Sans"
+                            "Luxi Mono"
+                            (/ staff-height pt 20)))
 }
 
 \include "common.ly"
