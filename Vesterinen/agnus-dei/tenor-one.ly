@@ -26,8 +26,8 @@ TenOneMusic = \relative c' {
     { \stemDown ais1. \glissando | h1 } 
     \new Voice 
     { \voiceTwo \stemUp h1. \glissando | fis1 } 
-  >> r2 |
-  R1. |
+  >> r2 | R1. |
+  \stemNeutral
   \time 6/2 r1-\tweak X-offset #5 \mf h2 ais( h) cis | d( cis) r
   h ais( h) cis d( cis4) r4 
   h2 ais4( h) cis2 d4( cis) r4 

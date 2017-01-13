@@ -27,6 +27,7 @@ AltoMusic = \relative c'' {
     \new Voice 
     { \voiceTwo h1.} 
   >> |
+  \stemNeutral
   r1\! r2\mf h ais( h) | cis d( cis) r h ais( |
 % 4
   h) cis d( cis4) r4 
@@ -52,7 +53,7 @@ AltoMusic = \relative c'' {
   d d1 | d fis1. | r1\p d e2 | f1 e2 r2 | 
   d1 << { \stemDown d2 } \new Voice { \voiceTwo \stemUp e2 } >> |
 % 9
-  << { \stemDown e1 } \new Voice { \voiceTwo \stemUp f1 } >> e2 |
+  << { \stemDown e1 } \new Voice { \voiceTwo \stemUp f1 } >>  \stemNeutral e2 |
   r2\mp d a' | a1 g2 | d2( a'1.) | e2 r2 r\p d( |
   d) d des1 | cis4 r cis2. dis4 e2 | es r c( | c) c ces1 |
 % 10
@@ -60,6 +61,7 @@ AltoMusic = \relative c'' {
   es1\< r2 | b'(\f a1) | b2 r | g( fis1) | g4 r r2 |
 % 11
   << { \stemDown d'2( cis1) } \new Voice { \voiceTwo \stemUp d1. } >> |
+  \stemNeutral
   d4 r r2 | h( ais1) | h r2 |
   fis2( eis1) | fis1.(\> | fis1)\mf fis2 | cis1 r2 | R1.-\tweak X-offset #4 \mp |
   <<
@@ -67,6 +69,7 @@ AltoMusic = \relative c'' {
   \new Voice
     { \voiceTwo \stemUp \slurUp fis2( s1) }
   >> |
+  \stemNeutral
 % 12
   fis\breve\> | r1-\tweak X-offset #3 \p gis( | gis) gis | gis1.\< gis2\> r2\! |
   h,1.(\pp ais\breve) | h\breve( h1.)\fermata |

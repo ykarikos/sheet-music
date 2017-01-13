@@ -30,6 +30,7 @@ SopOneMusic = \relative c'' {
     \new Voice 
     { \voiceTwo \stemUp h2 \glissando fis1 } 
   >> |
+  \stemNeutral
   \time 6/2 r1\!^"Più mosso" r1 r2\mf h | ais( h) cis d( cis) r2 |
 % 4
   h ais( h) cis d( cis4) r4 |
@@ -66,15 +67,31 @@ SopOneMusic = \relative c'' {
   g2.( g1)( |
 % 8
   \time 3/2 g1.)\< | g2(\f^"Tempo I" a1) |
-  \time 5/2 << { \stemDown b1. } \new Voice { \voiceTwo \stemUp a1. } >>  a4 r4 r2 |
+  \time 5/2 <<
+    { \stemDown b1. }
+  \new Voice
+    { \voiceTwo \stemUp a1. }
+  >>
+  \stemNeutral
+  a4 r4 r2 |
   \time 3/2 g2( a1) |
   \time 4/2 b a2 a |
-  \time 3/2  << { \stemDown g2 g1 } \new Voice { \voiceTwo \stemUp g2 g( fis) } >> |
+  \time 3/2  <<
+    { \stemDown g2 g1 }
+  \new Voice
+    { \voiceTwo \stemUp g2 g( fis) }
+  >> |
+  \stemNeutral
   \time 5/2 g1 a1. | R1*5/2 | 
   \time 4/2 R\breve |
   \time 3/2 R1. |
 % 9
-  R1. | r2\mp d e << { \stemDown e1 } \new Voice { \voiceTwo \stemUp f1 } >> e2 |
+  R1. | r2\mp d e <<
+    { \stemDown e1 }
+  \new Voice
+    { \voiceTwo \stemUp f1 }
+  >>
+  \stemNeutral e2 |
   \time 4/2 d( cis1.) | d2 r2 r1 |
   R\breve | r2\p cis2. cis4 c!2 | \time 3/2 c2 r2 r | \time 4/2 R\breve
 % 10

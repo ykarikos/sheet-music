@@ -26,6 +26,7 @@ BassMusic = \relative c' {
     \new Voice 
     { \voiceOne cis1.( | d1) } 
   >> r2 | R1. |
+  \stemNeutral
   \time 6/2 h2-\tweak X-offset #-5 \mf ais( h) cis d( cis) r
   h ais( h) cis d( cis4) r4 
   h2 ais4( h) cis2 d4( cis) r4 

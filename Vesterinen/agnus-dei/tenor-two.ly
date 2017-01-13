@@ -21,7 +21,8 @@ TenTwoMusic = \relative c' {
   f1 es4 r4 | r2 es g | f1 es2 | 
   \time 4/2 f2( g1.)\> | \time 3/2 h1.\p
   \time 5/2 r1 h1. |
-  \time 3/2 fis1.( | e1) r2 | R1. 
+  \time 3/2 fis1.( | e1) r2 | R1.
+  \stemNeutral
   \time 6/2 r2\mf h ais( h) cis d( cis) r
   h ais( h) cis d( cis4) r4 
   h2 ais4( h) cis2 d4( cis) r4 

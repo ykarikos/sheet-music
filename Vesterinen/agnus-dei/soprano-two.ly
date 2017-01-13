@@ -21,7 +21,9 @@ SopTwoMusic = \relative c'' {
   \time 4/2 g\breve\> |
   \time 3/2 h1.\p |
   \time 5/2 R\breve*5/4 | \time 3/2 R1. |
-  h1. | fis2( e1)\< | r1\! r1-\tweak X-offset #5 \mf h'2 ais( | h) cis d( cis) r h |
+  h1. | fis2( e1)\< |
+  \stemNeutral
+  r1\! r1-\tweak X-offset #5 \mf h'2 ais( | h) cis d( cis) r h |
   ais( h) cis d( cis4) r4 
   h2 ais4( h) cis2 d4( cis) r4 
   h4 ais( h) cis d( |
@@ -42,6 +44,7 @@ SopTwoMusic = \relative c'' {
   g1.)\< | d2(\f g1) | g1. g1( | g) g2 | e e1 e2 |
   g a1 |
   << { \stemDown a1 } \new Voice { \voiceTwo \stemUp b1 } >> d1.( |
+  \stemNeutral
   d1)(\> d1.)(\pp | d\breve)( | d1.)(
 % 9
   d1.)( | d2)\mp d d | d1 d2 |
@@ -60,6 +63,7 @@ SopTwoMusic = \relative c'' {
   h4.( a8 a1) | 
   << { \stemDown gis2( gis8 a gis fis }
   \new Voice { \voiceTwo \stemUp h4. cis8 h a gis fis } >> |
+  \stemNeutral
   gis4 fis8 gis fis2) fis | fis1 r2 |
   cis2( fis1) | ais1 r2-\tweak X-offset #2 \mf | h4.( ais8 gis1) | gis r2 | R1.-\tweak X-offset #4 \mp |
   h4.( a!8 gis1) |
