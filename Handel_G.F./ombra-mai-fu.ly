@@ -57,8 +57,14 @@ upperOne = \relative c' {
   << {<f d>8. <es c>16 <f d>4 c'4(} \\ {b,4 b d} >> |
   << {c'4) b as8. g16} \\ {<f d>4 es d} >> |
   << {g2 r4} \\ {<es b> es <as d,>} >> |
-  
-%  << {} \\ {} >>
+  << {es'4 es d} \\ {<b g>4 <b g> <b g>} >> |
+  << {c4. b8 b4} \\ {<as es>4 <as es> <f d>} >> |
+  << {b8 a a4. a8} \\ {<es c>4 <es c> <es c>} >> |
+  << {b'4. c8 b4} \\ {<f d>4 <f d> <g es>} >> |
+  << {as!8 g f4. d'8} \\ {<es, c>4 es d8 <b' f>} >> |
+  << {<es es,>2.^\fermata} \\ {b4 as8 g as4_\fermata} >> |
+
+%  << {} \\ {} >> |
 }
 
 lowerOne = \relative c, {
