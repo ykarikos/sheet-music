@@ -35,7 +35,7 @@ upperOne = \relative c' {
   <es g,>2 r4 |
 
   % verse
-  <g b,> <g b,> <g b,> | <d b> <d b> <d b> |
+  <g b,>\p <g b,> <g b,> | <d b> <d b> <d b> |
   es es2( | <es) b>4 <d b> << {c8. b16} \\ {as4} >> |
   \clef bass <b g es>2. |
   \clef treble <c as>4 <d as> es16 f <g es b>8 |
@@ -61,18 +61,41 @@ upperOne = \relative c' {
   << {c4. b8 b4} \\ {<as es>4 <as es> <f d>} >> |
   << {b8 a a4. a8} \\ {<es c>4 <es c> <es c>} >> |
   << {b'4. c8 b4} \\ {<f d>4 <f d> <g es>} >> |
-  << {as!8 g f4. d'8} \\ {<es, c>4 es d8 <b' f>} >> |
-  << {<es es,>2.^\fermata} \\ {b4 as8 g as4_\fermata} >> |
+  << {as!8\< g f4. d'8} \\ {<es, c>4 es d8 <b' f>} >> |
+  << {<es es,>2.^\fermata_\f} \\ {b4 as8 g as4_\fermata} >> |
+  << {f16\p g as8 g4 f8. es16} \\ {<es c>4 d4( <d) f,>} >> | <es g,>2. |
 
+  % outro
+  << { es'4\f es d} \\ { <b es,>4 <b es,> <b es,>} >> |
+  << { c4. b8 b4 } \\ { <as es>4 <as es> <f d> } >> |
+  << { b8 a a4. a8 } \\ { <es c>4 <es c> <es c> } >> |
+  << { <b' f>4. <c as!>8 <b g>4 } \\ {b,4 d es} >> |
+  << {<as f>8 <g es> f4. es8 } \\ { c4 es <d b> } >> |
+  <es g,>2. \bar "|."
 %  << {} \\ {} >> |
 }
 
 lowerOne = \relative c, {
+  % intro
   es4 es es | <f' f,> <f f,> <d f,> | << { es2. } \\ { g,4 g g} >> |
   <es' as,>4 <f f,> es, | b' b b | as as as | g g g |
   f f f | es es es | <b'' es,> <as f> g | as as, b | c c c | b d <g es> |
   as, <f' b,> b,, | es2 r4 |
 
+  % verse
+  es'4 es es | b b b | <g' c,> <g c,> <g c,> | <g g,> <g g,> <es as,> |
+  es, es es | <es' as,> <f f,> <g es,> | b, b b | as as as | g g g |
+  as f b | es, es es | f f f |
+  << {g'2.} \\ {g,4 g g} >> | <es' c>4 d es | as, as' g |
+  <as f> f es | d g as | <as f> g <g g,> |
+  <es as,> <f f,> <f f,> | <f b,> es es, |
+  b' b <f' as,> | as g f | es es f | g g, g | as as b | c c c | b as' g |
+  as b b, | c2._\fermata |
+  as4 <b' b,> b,, | es4 es f |
+
+  % outro
+  g g g | as as b | c c c | d b es |
+  as, <f' b,> b,, | es2. \bar "|."
 }
 
 \score { 
