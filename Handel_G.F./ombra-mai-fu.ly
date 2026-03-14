@@ -43,7 +43,7 @@ upperOne = \relative c' {
 
   << { <f' d>4. <es c>8 } \\ {b2} >> <f' d b>4 |
   <c' f, d> <c f, d> <d f,> | << {es4. b8 b4} \\ {<b es,>4 es, es} >> |
-  << {r8 c' as4. g8 } \\ { <es as,>4 <es c> <d b>} >> |
+  << {r8 c' as4. g8 } \\ { <es c>4 <es c> <d b>} >> |
   <g es b>4 <g es b> <g es b> |
   << {as4 as as} \\ {<es as,>4 <d as> <c as>8. b16} >> |
   << {b'4 es, es} \\ {b2.} >> | \pageBreak
@@ -65,7 +65,7 @@ upperOne = \relative c' {
 
   << {as!8\< g f4. d'8} \\ {<es, c>4 es d8 <b' f>} >> |
   << {<es es,>2.^\fermata_\f} \\ {b4 as8 g as4_\fermata} >> |
-  << {f16\p g as8 g4 f8. es16} \\ {<es c>4 d4( <d) f,>} >> | <es g,>2. |
+  << {f16\p g as8 g4 f8. es16} \\ {<es c>4 d4( d)} >> | <es g,>2. |
 
   % outro
   << { es'4\f es d} \\ { <b es,>4 <b es,> <b es,>} >> | \break
