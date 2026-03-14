@@ -137,7 +137,7 @@ vocalLyrics = \lyricmode {
     \new Staff \with {
       \RemoveAllEmptyStaves
     } <<
-      \new Voice = vocal {
+      \new Voice = vocal \transpose es f {
         \global
         \vocalPart
       }
@@ -145,13 +145,13 @@ vocalLyrics = \lyricmode {
     >>
     \new GrandStaff <<
       \new Staff <<
-        \new Voice = upper {
+        \new Voice = upper \transpose es f {
           \global
 	  \upperOne
         }
       >>
       \new Staff <<
-        \new Voice = lower {
+        \new Voice = lower \transpose es f {
           \global
 	  \clef bass
 	  \lowerOne
