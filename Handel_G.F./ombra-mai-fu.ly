@@ -98,25 +98,48 @@ lowerOne = \relative c, {
   as, <f' b,> b,, | es2. \bar "|."
 }
 
-\score { 
-  \new GrandStaff <<
+vocalPart = \relative c'' {
+  % intro
+  R2.*14 |
+
+  % verse
+  r4 b2(^\p | b2.)( | b4) g4 f8.( es16) | es2. | R2.*2 |
+
+  % outro
+}
+
+vocalLyrics = \lyricmode {
+  Om -- bra mai fù di ve -- ge -- ta -- bi -- le
+}
+
+\score {
+  <<
     \new Staff <<
-      \new Voice = upper {
+      \new Voice = vocal {
         \global
-	\upperOne
+        \vocalPart
       }
+      \new Lyrics \lyricsto vocal \vocalLyrics
     >>
-    \new Staff <<
-      \new Voice = lower {
-        \global
-	\clef bass
-	\lowerOne
-      }
+    \new GrandStaff <<
+      \new Staff <<
+        \new Voice = upper {
+          \global
+	  \upperOne
+        }
+      >>
+      \new Staff <<
+        \new Voice = lower {
+          \global
+	  \clef bass
+	  \lowerOne
+        }
+      >>
     >>
   >>
 
   \midi { }
-  
+
   \layout { }
 
 }
