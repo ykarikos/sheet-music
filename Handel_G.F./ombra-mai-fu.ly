@@ -110,7 +110,7 @@ vocalPart = \relative c'' {
   c'4 c d | es4. b8 b4 | r8 c8 as4. g8 | g2 es4( |
   es) d c8.( b16) | b2. |
 
-  as'4 as g | f4. es8 es4 | d' d c | h4. c16( b) c4 |
+  as'4 as g | f4. es8 es4 | d' d c | h4. c16( h) c4 |
   r8 f, d4. c8 | c4 as'2( | as4) g8( f) g4 |
   f8. es16 f4 c'( | c) b as8.( g16) | g2 r4 |
 
