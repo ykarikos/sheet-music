@@ -11,13 +11,20 @@ global = {
       
 \header {
     title = "Ombra mai fù"
-    subtitle = "Serse"
-    composer = "George Frideric Händel"
+    subtitle = "from Serse"
+    composer = "George Frideric Händel (1685–1759)"
     enteredby = "Yrjö Kari-Koskinen"
+    copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
+    tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
 }
 
 \paper {
     indent = 0.0
+    #(define fonts
+        (make-pango-font-tree "Baskerville"
+                              "Nimbus Sans"
+                              "Luxi Mono"
+                              (/ staff-height pt 20)))
 }
 
 upperOne = \relative c' {
