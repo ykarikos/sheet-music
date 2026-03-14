@@ -15,7 +15,6 @@ global = {
     subtitle = "Serse"
     composer = "George Frideric Händel"
     enteredby = "Yrjö Kari-Koskinen"
-%    tagline = "foo"
 }
 
 \paper {
@@ -26,26 +25,28 @@ upperOne = \relative c' {
   % intro
   << { es2.\p( } \\ { <b g>4 <b g>4 <b g>4 } >> | << { es4) } \\ { as,4 } >> <d as> <c as>8. b16 | <b g>2. |
   c4 <d as> << { es16 f g8 } \\ { g,8 <es' b>8 } >> | <f d b>2. |
-  << { c'2.\f } \\ { <f, d>4 <f d> <f d> } >> | <b g es>2 r4 |
+  << { c'2.\f } \\ { <f, d>4 <f d> <f d> } >> | <b g es>2 r4 | \break
+
   << { as2.\p } \\ { <d, as>4 <d as> <d as> } >> | <g es b>2 r4 |
   <es' g,>\f <es f,> <d b es,> | << { c4. b8 b4( } \\ { <as es>2 <as d,>4 } >> |
   << { b8) a b a b a } \\ { <es c>4 <es c> <es c> } >> |
   << { <b' f>2( b4) } \\ {d,4 b8. as16 es'4} >> |
-  << {as!8 g f4. es8 } \\ { <es c>4 es <d b> } >> |
+  << {as!8 g f4. es8 } \\ { <es c>4 es <d b> } >> | \break
+
   <es g,>2 r4 |
 
   % verse
   <g b,>\p <g b,> <g b,> | <d b> <d b> <d b> |
   es es2( | <es) b>4 <d b> << {c8. b16} \\ {as4} >> |
-  \clef bass <b g es>2. |
-  \clef treble <c as>4 <d as> es16 f <g es b>8 |
+  \clef bass <b g es>2. | 
+  \clef treble <c as>4 <d as> es16 f <g es b>8 | \break
 
   << { <f d>4. <es c>8 } \\ {b2} >> <f' d b>4 |
   <c' f, d> <c f, d> <d f,> | << {es4. b8 b4} \\ {<b es,>4 es, es} >> |
   << {r8 c' as4. g8 } \\ { <es as,>4 <es c> <d b>} >> |
   <g es b>4 <g es b> <g es b> |
   << {as4 as as} \\ {<es as,>4 <d as> <c as>8. b16} >> |
-  << {b'4 es, es} \\ {b2.} >> |
+  << {b'4 es, es} \\ {b2.} >> | \pageBreak
 
   <as' es>4 <as f b,> <g es b> |
   << {f4. es8 es4} \\ {<es c>4 <d b> b} >> |
@@ -60,13 +61,14 @@ upperOne = \relative c' {
   << {es'4 es d} \\ {<b g>4 <b g> <b g>} >> |
   << {c4. b8 b4} \\ {<as es>4 <as es> <f d>} >> |
   << {b8 a a4. a8} \\ {<es c>4 <es c> <es c>} >> |
-  << {b'4. c8 b4} \\ {<f d>4 <f d> <g es>} >> |
+  << {b'4. c8 b4} \\ {<f d>4 <f d> <g es>} >> | \break
+
   << {as!8\< g f4. d'8} \\ {<es, c>4 es d8 <b' f>} >> |
   << {<es es,>2.^\fermata_\f} \\ {b4 as8 g as4_\fermata} >> |
   << {f16\p g as8 g4 f8. es16} \\ {<es c>4 d4( <d) f,>} >> | <es g,>2. |
 
   % outro
-  << { es'4\f es d} \\ { <b es,>4 <b es,> <b es,>} >> |
+  << { es'4\f es d} \\ { <b es,>4 <b es,> <b es,>} >> | \break
   << { c4. b8 b4 } \\ { <as es>4 <as es> <f d> } >> |
   << { b8 a a4. a8 } \\ { <es c>4 <es c> <es c> } >> |
   << { <b' f>4. <c as!>8 <b g>4 } \\ {b,4 d es} >> |
@@ -104,17 +106,37 @@ vocalPart = \relative c'' {
 
   % verse
   r4 b2(^\p | b2.)( | b4) g4 f8.( es16) | es2. | R2.*2 |
+  c4 d es16( f g8) | f4. es8 f4 |
+  c'4 c d | es4. b8 b4 | r8 c8 as4. g8 | g2 es4( |
+  es) d c8.( b16) | b2. |
 
-  % outro
+  as'4 as g | f4. es8 es4 | d' d c | h4. c16( b) c4 |
+  r8 f, d4. c8 | c4 as'2( | as4) g8( f) g4 |
+  f8. es16 f4 c'( | c) b as8.( g16) | g2 r4 |
+
+  es' es d | c4. b8 b4 | b8( a8) a4. a8 | b4. c8 b4 |
+  as8(^\< g) f4. d'8 | es2.^\fermata^\f |
+  f,16(^\p g as8) g4( f8.) es16 | es2. | 
+  R2.*6 \bar "|."
 }
 
 vocalLyrics = \lyricmode {
   Om -- bra mai fù di ve -- ge -- ta -- bi -- le
+  ca -- ra_ed a -- ma -- bi -- le so -- a -- ve più,
+  om -- bra mai fù di ve -- ge -- ta -- bi -- le
+  ca -- ra_ed a -- ma -- bi -- le so -- a -- ve più,
+  ca -- ra_ed a -- ma -- bi -- le
+  om -- bra mai fù
+  di ve -- ge -- ta -- bi -- le
+  ca -- ra_ed a -- ma -- bi -- le so -- a -- ve più,
+  so -- a -- ve più. 
 }
 
 \score {
   <<
-    \new Staff <<
+    \new Staff \with {
+      \RemoveAllEmptyStaves
+    } <<
       \new Voice = vocal {
         \global
         \vocalPart
@@ -140,6 +162,10 @@ vocalLyrics = \lyricmode {
 
   \midi { }
 
-  \layout { }
-
+  \layout {
+    \context {
+      \Score
+      \override NonMusicalPaperColumn.page-break-permission = ##t
+    }
+  }
 }
