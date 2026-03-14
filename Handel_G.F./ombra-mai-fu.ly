@@ -7,7 +7,6 @@ global = {
 %  \autoBeamOff
    \key es \major
   \tempo "Larghetto"
-  \set Staff.midiInstrument = #"harpsichord"
 }
       
 \header {
@@ -137,23 +136,34 @@ vocalLyrics = \lyricmode {
   <<
     \new Staff \with {
       \RemoveAllEmptyStaves
+      midiMinimumVolume = #0.6
+      midiMaximumVolume = #1.0
     } <<
       \new Voice = vocal \transpose es f {
         \global
+        \set Staff.midiInstrument = #"voice oohs"
         \vocalPart
       }
       \new Lyrics \lyricsto vocal \vocalLyrics
     >>
     \new GrandStaff <<
-      \new Staff <<
+      \new Staff \with {
+        midiMinimumVolume = #0.4
+        midiMaximumVolume = #0.7
+      } <<
         \new Voice = upper \transpose es f {
           \global
+          \set Staff.midiInstrument = #"harpsichord"
 	  \upperOne
         }
       >>
-      \new Staff <<
+      \new Staff \with {
+        midiMinimumVolume = #0.4
+        midiMaximumVolume = #0.7
+      } <<
         \new Voice = lower \transpose es f {
           \global
+          \set Staff.midiInstrument = #"harpsichord"
 	  \clef bass
 	  \lowerOne
         }
