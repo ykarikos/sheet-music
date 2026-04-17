@@ -10,6 +10,7 @@ global = {
 
 \header {
   title = "Suvivirsi"
+  subtitle = "Den blomstertid nu kommer"
   composer = "Ruotsalainen kansansävelmä"
   mutopiacomposer = "Traditional"
   maintainer = "Yrjö Kari-Koskinen"
