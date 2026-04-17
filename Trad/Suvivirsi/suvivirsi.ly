@@ -1,6 +1,8 @@
 \version "2.24.0"
 \include "suomi.ly"
 
+#(set-global-staff-size 20)
+
 global = { 
 %  \numericTimeSignature
   \time 4/4 
@@ -12,15 +14,17 @@ global = {
   mutopiacomposer = "Traditional"
   maintainer = "Yrjö Kari-Koskinen"
   copyright = "This work is licensed under the Creative Commons Attribution 4.0 International License."
-  tagline = "The source is available at https://ykarikos.github.io/sheet-music/"
+  tagline = ""
 }
 
 \paper {
 %  indent = 0
+  left-margin = 2\cm
+  right-margin = 2\cm
 }
 
 
-SopMusic = \relative c'' {
+SopMusic = \transpose es f \relative c'' {
   \key es \major
 
   \partial 4 <g b,>4
@@ -44,28 +48,13 @@ SopMusic = \relative c'' {
   \bar "|."
 }
 
-stanzaOneLyrics = \lyricmode {
-  Jo jou- tui ar- mas ai- ka ja su- vi su- loi- nen. Kau-
-}
-
-stanzaOneVoltaLyrics = \lyricmode {
-  \skip 1
-  nii- sti jo- ka paik- kaa ko- ris- taa kuk- ka-
-  \skip 1 \skip 1
-  nen. Nyt siu- na- us- taan suo- pi taas läm- pö au- rin- gon.
-  Se luon- non uu- deks' luo- pi, sen kut- suu e- lo- hon.
-}
-
-
-BassMusic = \relative c, {
+BassMusic = \transpose es f \relative c, {
   \key es \major
   \clef bass
   es4 | es' d c b | g b es c | d es f b, | es2. es,4 |
   es'2. g4 | as g f es | d c b es | c d es2 | b2. d4 |
   es d c g | as f' <e c> es | as, g as b | es,2.
 }
-
-
 
 \score {
   \new GrandStaff <<
@@ -84,8 +73,6 @@ BassMusic = \relative c, {
     \tempo 4 = 70
   }
   \layout {
-    #(set-global-staff-size 20)
     ragged-last = ##t
-    line-width = 18\cm
   }
 }
