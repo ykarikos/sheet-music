@@ -1,7 +1,5 @@
-\version "2.18.0"
+\version "2.24.0"
 \include "suomi.ly"
-
-#(set-global-staff-size 18)
 
 global = { 
 %  \numericTimeSignature
@@ -30,15 +28,15 @@ SopMusic = \relative c'' {
     << { g4 f } \\ { b,2 } >>
     <es g,>4 <d b> | <es b>( <f d>) <g es>^\fermata <g es> |
     <b f> <b g> <as es> <as d,> | 
+    \alternative {
+      { <g es>2. <g b,>4 | \break } 
+      { <g es>2. <b es,>4 | }
+    }
   }
-  \alternative {
-    { <g es>2. <g b,>4 }
-    { <g es>2. <b es,>4 }
-  } {}
 
   << { c4 b as } \\ { es2 es8[ d] } >> <g b,>4 |
   << { f2 } \\ { b,4 a8[ es'] } >>
-  <f d>4^\fermata <g es> | <as es> <as f> <g f> <g es> | <f d>2. <f b,>4 |
+  <f d>4^\fermata <g es> | <as es> <as f> <g f> <g es> | <f d>2. <f b,>4 | \break
   << { g4 f } \\ { b,2 } >> <es g,>4 <d b> |
   << { c2 } \\ { b4 as } >> <c g>4^\fermata <b g> |
   <c as> <es b> <es c> << { d4 } \\ {b8[ as]} >>  |
@@ -86,5 +84,8 @@ BassMusic = \relative c, {
     \tempo 4 = 70
   }
   \layout {
+    #(set-global-staff-size 20)
+    ragged-last = ##t
+    line-width = 18\cm
   }
 }
