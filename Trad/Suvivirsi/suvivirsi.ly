@@ -6,8 +6,6 @@
 global = { 
 %  \numericTimeSignature
   \time 4/4 
-%  \autoBeamOff
-  \set Staff.midiInstrument = #"voice oohs"
 }
 
 \header {
@@ -24,23 +22,27 @@ global = {
 }
 
 
-SopMusic = \transpose es a, \relative c'' {
+SopMusic = \relative c'' {
   \key es \major
-  \set Staff.instrumentName = #"Tenore"
-  \set Staff.shortInstrumentName = "T"
-  \clef "treble_8"
 
-  \partial 4 g4
+  \partial 4 <g b,>4
   \repeat volta 2 {
-    g f es d | es( f) g g | b b as as | 
+    << { g4 f } \\ { b,2 } >>
+    <es g,>4 <d b> | <es b>( <f d>) <g es>^\fermata <g es> |
+    <b f> <b g> <as es> <as d,> | 
   }
   \alternative {
-    { g2. g4 }
-    { g2. b4 }
+    { <g es>2. <g b,>4 }
+    { <g es>2. <b es,>4 }
   } {}
 
-  c b as g | f2 f4 g | as as g g | f2. f4 |
-  g f es d | c2 c4 b | c es es d  | es2.
+  << { c4 b as } \\ { es2 es8[ d] } >> <g b,>4 |
+  << { f2 } \\ { b,4 a8[ es'] } >>
+  <f d>4^\fermata <g es> | <as es> <as f> <g f> <g es> | <f d>2. <f b,>4 |
+  << { g4 f } \\ { b,2 } >> <es g,>4 <d b> |
+  << { c2 } \\ { b4 as } >> <c g>4^\fermata <b g> |
+  <c as> <es b> <es c> << { d4 } \\ {b8[ as]} >>  |
+  <es' b g>2.^\fermata
   \bar "|."
 }
 
@@ -57,30 +59,22 @@ stanzaOneVoltaLyrics = \lyricmode {
 }
 
 
-BassMusic = \transpose es a \relative c, {
+BassMusic = \relative c, {
   \key es \major
-  \set Staff.instrumentName = #"Basso"
-  \set Staff.shortInstrumentName = "B"
   \clef bass
-  es4 | es' d c b | g( b) es c | d es f b, | es2. es,4 |
-  es'2. g4 | as g f es | d( c) b es | c d es es | b2. d4 |
-  es d c g | as( f') c es | as, g as b | es,2.
+  es4 | es' d c b | g b es c | d es f b, | es2. es,4 |
+  es'2. g4 | as g f es | d c b es | c d es2 | b2. d4 |
+  es d c g | as f' <e c> es | as, g as b | es,2.
 }
 
 
 
 \score {
-  \new ChoirStaff <<
+  \new GrandStaff <<
     \new Staff <<
       \new Voice = "Sop" { 
         \global \SopMusic
       }
-      \new Lyrics \lyricsto "Sop" {
-        \stanzaOneLyrics
-      }
-      \new Lyrics \lyricsto "Sop" {
-        \stanzaOneVoltaLyrics
-     }
     >>
     \new Staff <<
       \new Voice = "Bass" {
